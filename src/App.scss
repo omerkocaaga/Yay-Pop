@@ -6,7 +6,7 @@
 body {
   background-color: #e5e5e5 !important;
   font-family: 'Terminal Grotesque' !important;
-  background: url(./assets/img/cizgi.png) no-repeat center 7% scroll; 
+  background: url(./assets/img/cizgi.png) no-repeat center 6% scroll; 
   background-size: auto;
 }
 
@@ -22,18 +22,20 @@ body {
     }
   }
   .center {
+    position: relative;
+
     .hero {
-      position: relative;
-      background-color: white;
       border: 2px solid black;
-      width: 100%;
-      padding-bottom: 135%;
+      width: 90%;
       top: -10px;
-      .wall {
-        position: absolute;
-        top: 72%;
-        left:9%;
-      }
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .wall {
+      position: absolute;
+      top: 72%;
+      left:3%;
     }
   }
   .header-ctn {
@@ -83,8 +85,7 @@ body {
     padding-bottom: 6rem;
     .page-ctn {
       position: relative;
-      display: flex;
-      align-items: flex-start;
+
       &:nth-child(even){
         padding-right: 50px;
         div {
@@ -109,10 +110,15 @@ body {
       &:last-child {
         visibility: hidden;
       }
-      img {
-        border: 2px solid black;
-        margin-bottom: 2rem;
+      a{
+        display: flex;
+        align-items: flex-start;
+        img {
+          border: 2px solid black;
+          margin-bottom: 2rem;
+        }
       }
+
     }
 
   }

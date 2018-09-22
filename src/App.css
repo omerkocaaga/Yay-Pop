@@ -5,7 +5,7 @@
 body {
   background-color: #e5e5e5 !important;
   font-family: 'Terminal Grotesque' !important;
-  background: url(./assets/img/cizgi.png) no-repeat center 7% scroll;
+  background: url(./assets/img/cizgi.png) no-repeat center 6% scroll;
   background-size: auto; }
 
 .container-fluid {
@@ -14,17 +14,19 @@ body {
     padding-top: 4rem; }
     .container-fluid .intro-text span {
       font-family: 'Anafor Basic' !important; }
-  .container-fluid .center .hero {
-    position: relative;
-    background-color: white;
-    border: 2px solid black;
-    width: 100%;
-    padding-bottom: 135%;
-    top: -10px; }
-    .container-fluid .center .hero .wall {
+  .container-fluid .center {
+    position: relative; }
+    .container-fluid .center .hero {
+      border: 2px solid black;
+      width: 90%;
+      top: -10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .container-fluid .center .wall {
       position: absolute;
       top: 72%;
-      left: 9%; }
+      left: 3%; }
   .container-fluid .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -61,9 +63,7 @@ body {
     padding-top: 14rem;
     padding-bottom: 6rem; }
     .container-fluid .book .page-ctn {
-      position: relative;
-      display: flex;
-      align-items: flex-start; }
+      position: relative; }
       .container-fluid .book .page-ctn:nth-child(even) {
         padding-right: 50px; }
         .container-fluid .book .page-ctn:nth-child(even) div {
@@ -82,6 +82,9 @@ body {
         visibility: hidden; }
       .container-fluid .book .page-ctn:last-child {
         visibility: hidden; }
-      .container-fluid .book .page-ctn img {
-        border: 2px solid black;
-        margin-bottom: 2rem; }
+      .container-fluid .book .page-ctn a {
+        display: flex;
+        align-items: flex-start; }
+        .container-fluid .book .page-ctn a img {
+          border: 2px solid black;
+          margin-bottom: 2rem; }

@@ -14,15 +14,15 @@ class Book extends Component {
       <Row className='book'>
         {map(arr, (item, index) => {
           return (
-            <Col lg='2' md='6' sm='6' xs='6' key={index} className='page-ctn'>
-              <a>
+            <Col key={index} lg='2' md='6' sm='6' xs='6' className='page-ctn'>
+              <a href='#'>
                 <img
                   className='mx-auto img-fluid'
                   src='https://via.placeholder.com/200x280'
                 />
               </a>
-              <div>{item}</div>
 
+              <div>{item}</div>
             </Col>
           )
         })}

@@ -4,25 +4,64 @@
 
 body {
   background-color: #e5e5e5 !important;
-  font-family: 'Terminal Grotesque' !important; }
+  font-family: 'Terminal Grotesque' !important;
+  background: url(./assets/img/cizgi.png) no-repeat center 22% scroll;
+  background-size: auto; }
 
 .container-fluid {
   max-width: 1620px !important; }
-  .container-fluid .intro-text span {
-    font-family: 'Anafor Basic' !important; }
+  .container-fluid .intro-text {
+    padding-top: 4rem; }
+    .container-fluid .intro-text span {
+      font-family: 'Anafor Basic' !important; }
   .container-fluid .center .hero {
     position: relative;
     background-color: white;
     border: 2px solid black;
     width: 100%;
-    padding-bottom: 135%; }
+    padding-bottom: 135%;
+    top: -10px; }
     .container-fluid .center .hero .wall {
       position: absolute;
       top: 72%;
       left: 9%; }
   .container-fluid .header-ctn {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 4rem; }
+    .container-fluid .header-ctn .hamburger {
+      padding: 0 !important;
+      z-index: 3; }
+      .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner {
+        width: 30px !important;
+        height: 3px !important;
+        border-radius: 0 !important; }
+        .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner::before {
+          width: 30px !important;
+          height: 3px !important;
+          border-radius: 0 !important; }
+        .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner::after {
+          width: 30px !important;
+          height: 3px !important;
+          border-radius: 0 !important; }
     .container-fluid .header-ctn .logo {
-      font-family: 'Anafor Basic';
-      font-size: 4rem; }
+      font-size: 4rem;
+      position: fixed;
+      top: 9%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      z-index: 2; }
+      .container-fluid .header-ctn .logo span {
+        font-family: 'Anafor Basic';
+        font-size: 3.58rem; }
+    .container-fluid .header-ctn .lang {
+      z-index: 3; }
+  .container-fluid .pages {
+    padding-top: 12rem; }
+    .container-fluid .pages .page {
+      width: 50%;
+      background-color: white;
+      border: 2px solid black;
+      padding-bottom: 50%; }

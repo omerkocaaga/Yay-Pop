@@ -7,8 +7,8 @@ class Main extends Component {
   render () {
     return (
       <Row>
-        <Col sm='4'>
-          <div className='intro-text pr-5 pt-5'>
+        <Col lg={{ size: 4, order: 1 }} md={{ order: 2 }}>
+          <div className='intro-text'>
             <p>
               <span>YAY</span>
               , yaymaktan geliyor. Yüklemi emir kipinde kullanıyoruz. Bu belki nazikçe dürtmek istememizden kaynaklanıyor ya da umutlu bir isteğimizi ifade ediyor.
@@ -32,7 +32,7 @@ class Main extends Component {
             </p>
           </div>
         </Col>
-        <Col sm='4'>
+        <Col lg={{ size: 4, order: 1 }} md={{ order: 1 }}>
           <div className='center'>
             <div className='hero'>
               <img
@@ -44,8 +44,8 @@ class Main extends Component {
             </div>
           </div>
         </Col>
-        <Col sm='4'>
-          <div className='intro-text pl-5 pt-5'>
+        <Col lg={{ size: 4, order: 1 }} md={{ order: 2 }}>
+          <div className='intro-text'>
             <p>
               <span>YAY-POP</span>
               {' '}

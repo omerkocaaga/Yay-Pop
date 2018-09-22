@@ -6,6 +6,8 @@
 body {
   background-color: #e5e5e5 !important;
   font-family: 'Terminal Grotesque' !important;
+  background: url(./assets/img/cizgi.png) no-repeat center 22% scroll; 
+  background-size: auto;
 }
 
 
@@ -14,6 +16,7 @@ body {
   // padding-left: 150px !important;
   // padding-right: 150px !important; 
   .intro-text {
+    padding-top: 4rem;
     span {
       font-family: 'Anafor Basic' !important;
     }
@@ -25,6 +28,7 @@ body {
       border: 2px solid black;
       width: 100%;
       padding-bottom: 135%;
+      top: -10px;
       .wall {
         position: absolute;
         top: 72%;
@@ -35,9 +39,54 @@ body {
   .header-ctn {
     display: flex;
     justify-content: space-between;
+    padding-top: 4rem;
+    .hamburger {
+      padding: 0 !important;
+      z-index: 3;
+      .hamburger-box {
+        .hamburger-inner {
+          width: 30px !important;
+          height: 3px !important;
+          border-radius: 0 !important;
+          &::before {
+            width: 30px !important;
+            height: 3px !important;
+            border-radius: 0 !important;
+          }
+          &::after {
+            width: 30px !important;
+            height: 3px !important;
+            border-radius: 0 !important;
+          }
+        }
+      }
+    }
     .logo {
-      font-family: 'Anafor Basic';
       font-size: 4rem;
+      position: fixed;
+      top: 9%;
+      left:0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      z-index: 2;
+      span {
+        font-family: 'Anafor Basic';
+        font-size: 3.58rem;
+      }
+    }
+    .lang{
+      z-index: 3;
+    }
+  }
+  .pages {
+    padding-top: 12rem;
+    .page {
+      width: 50%;
+      background-color: white;
+      border: 2px solid black;
+      padding-bottom: 50%;
+
     }
   }
 }

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Anafor Basic';
+    src: url('../../assets/font/Anafor-Basic.eot');
+    src: url('../../assets/font/Anafor-Basic.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/font/Anafor-Basic.woff2') format('woff2'),
+        url('../../assets/font/Anafor-Basic.woff') format('woff'),
+        url('../../assets/font/Anafor-Basic.ttf') format('truetype'),
+        url('../../assets/font/Anafor-Basic.svg#Anafor-Basic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Terminal Grotesque';
+    src: url('../../assets/font/TerminalGrotesque.eot');
+    src: url('../../assets/font/TerminalGrotesque.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/font/TerminalGrotesque.woff2') format('woff2'),
+        url('../../assets/font/TerminalGrotesque.woff') format('woff'),
+        url('../../assets/font/TerminalGrotesque.ttf') format('truetype'),
+        url('../../assets/font/TerminalGrotesque.svg#TerminalGrotesque') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }

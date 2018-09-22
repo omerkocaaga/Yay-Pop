@@ -1,0 +1,28 @@
+* {
+  font-size: 20px;
+  box-sizing: border-box; }
+
+body {
+  background-color: #e5e5e5 !important;
+  font-family: 'Terminal Grotesque' !important; }
+
+.container-fluid {
+  max-width: 1620px !important; }
+  .container-fluid .intro-text span {
+    font-family: 'Anafor Basic' !important; }
+  .container-fluid .center .hero {
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    padding-bottom: 135%; }
+    .container-fluid .center .hero .wall {
+      position: absolute;
+      top: 72%;
+      left: 9%; }
+  .container-fluid .header-ctn {
+    display: flex;
+    justify-content: space-between; }
+    .container-fluid .header-ctn .logo {
+      font-family: 'Anafor Basic';
+      font-size: 4rem; }

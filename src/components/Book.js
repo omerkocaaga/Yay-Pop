@@ -11,13 +11,22 @@ class Book extends Component {
     }
     console.log(arr.length)
     return (
-      <Row>
-        <Col md='4'>
-          <div className='pages'>
-            <div className='page' />
-            <div className='page' />
-          </div>
-        </Col>
+      <Row className='book'>
+        {map(arr, (item, index) => {
+          return (
+            <Col lg='2' md='6' sm='6' xs='6' key={index} className='page-ctn'>
+              <a>
+                <img
+                  className='mx-auto img-fluid'
+                  src='https://via.placeholder.com/200x280'
+                />
+              </a>
+              <div>{item}</div>
+
+            </Col>
+          )
+        })}
+
       </Row>
     )
   }

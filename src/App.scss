@@ -6,7 +6,7 @@
 body {
   background-color: #e5e5e5 !important;
   font-family: 'Terminal Grotesque' !important;
-  background: url(./assets/img/cizgi.png) no-repeat center 22% scroll; 
+  background: url(./assets/img/cizgi.png) no-repeat center 7% scroll; 
   background-size: auto;
 }
 
@@ -67,7 +67,6 @@ body {
       top: 9%;
       left:0;
       right: 0;
-      bottom: 0;
       text-align: center;
       z-index: 2;
       span {
@@ -79,15 +78,44 @@ body {
       z-index: 3;
     }
   }
-  .pages {
-    padding-top: 12rem;
-    .page {
-      width: 50%;
-      background-color: white;
-      border: 2px solid black;
-      padding-bottom: 50%;
-
+  .book {
+    padding-top: 14rem;
+    padding-bottom: 6rem;
+    .page-ctn {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      &:nth-child(even){
+        padding-right: 50px;
+        div {
+          position: absolute;
+          left: calc(50% - 15px);
+          bottom: 2rem;
+          transform: translateX(-50%);
+        }
+      }
+      &:nth-child(odd){
+        padding-left: 50px;
+        div {
+          position: absolute;
+          left: calc(50% + 20px);
+          bottom: 2rem;
+          transform: translateX(-50%);
+        }
+      }
+      &:first-child {
+        visibility: hidden;
+      }
+      &:last-child {
+        visibility: hidden;
+      }
+      img {
+        border: 2px solid black;
+        margin-bottom: 2rem;
+      }
     }
+
   }
+
 }
 

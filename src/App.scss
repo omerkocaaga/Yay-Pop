@@ -34,8 +34,9 @@ body {
     }
     .wall {
       position: absolute;
-      top: 72%;
-      left:3%;
+      top: 75%;
+      left:6rem;
+      width: 80%;
     }
   }
   .header-ctn {
@@ -45,6 +46,17 @@ body {
     .hamburger {
       padding: 0 !important;
       z-index: 3;
+      position: relative;
+      .menu-ctn {
+        list-style: none;
+        padding-inline-start: 0 !important;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        li {
+          font-size: 2rem;
+        }
+      }
       .hamburger-box {
         .hamburger-inner {
           width: 30px !important;
@@ -64,22 +76,23 @@ body {
       }
     }
     .logo {
-      font-size: 4rem;
+      font-size: 3.7rem;
       position: fixed;
-      top: 9%;
+      top: 120px;
       left:0;
       right: 0;
       text-align: center;
       z-index: 2;
       span {
         font-family: 'Anafor Basic';
-        font-size: 3.58rem;
+        font-size: 3.3rem;
       }
     }
     .lang{
       z-index: 3;
     }
   }
+
   .book {
     padding-top: 14rem;
     padding-bottom: 6rem;

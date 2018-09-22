@@ -16,6 +16,14 @@ class Header extends Component {
               <span className='hamburger-box'>
                 <span className='hamburger-inner' />
               </span>
+              {isActive &&
+                <ul className='menu-ctn'>
+                  <li>HAKKINDA</li>
+                  <li>İÇİNDEKİLER</li>
+                  <li>KÜNYE</li>
+                  <li>SAYFALAR</li>
+                  <li>İNDİR</li>
+                </ul>}
             </span>
             <div className='logo'><span>YAY{' '}</span>POP</div>
             <div className='lang'>
@@ -30,6 +38,7 @@ class Header extends Component {
               </span>
             </div>
           </div>
+
         </Col>
       </Row>
     )

@@ -7,7 +7,12 @@ class Main extends Component {
   render () {
     return (
       <Row>
-        <Col lg={{ size: 4, order: 1 }} md={{ order: 2 }} sm={{ order: 2 }}>
+        <Col
+          lg={{ size: 4, order: 1 }}
+          md={{ order: 2 }}
+          sm={{ order: 2 }}
+          xs={{ order: 2 }}
+        >
           <div className='intro-text'>
             <p>
               <span>YAY</span>
@@ -32,7 +37,12 @@ class Main extends Component {
             </p>
           </div>
         </Col>
-        <Col lg={{ size: 4, order: 1 }} md={{ order: 1 }} sm={{ order: 2 }}>
+        <Col
+          lg={{ size: 4, order: 1 }}
+          md={{ order: 1 }}
+          sm={{ order: 1 }}
+          xs={{ order: 1 }}
+        >
           <div className='center'>
             <a href='#'>
               <img src='https://via.placeholder.com/200x280' className='hero' />
@@ -45,7 +55,12 @@ class Main extends Component {
             </a>
           </div>
         </Col>
-        <Col lg={{ size: 4, order: 1 }} md={{ order: 2 }} sm={{ order: 2 }}>
+        <Col
+          lg={{ size: 4, order: 1 }}
+          md={{ order: 2 }}
+          sm={{ order: 2 }}
+          xs={{ order: 2 }}
+        >
           <div className='intro-text'>
             <p>
               <span>YAY-POP</span>

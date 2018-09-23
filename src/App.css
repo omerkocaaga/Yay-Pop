@@ -81,6 +81,12 @@ body {
     .container-fluid .onagore-ctn img {
       width: 50%;
       margin-top: -10px; }
+  .container-fluid .onagore-st-ctn {
+    display: flex;
+    flex-direction: column; }
+    .container-fluid .onagore-st-ctn img {
+      width: 7%;
+      margin-top: -10px; }
   .container-fluid .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -114,7 +120,7 @@ body {
       left: 0;
       right: 0;
       z-index: 2;
-      width: 50%; }
+      width: 20%; }
     .container-fluid .header-ctn .lang {
       z-index: 3;
       cursor: pointer; }

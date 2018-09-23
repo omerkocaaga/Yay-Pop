@@ -4,6 +4,8 @@ import logo from '.././assets/img/logo.png'
 import logo_2x from '.././assets/img/logo@2x.png'
 import onagore from '.././assets/img/onagore.png'
 import onagore_2x from '.././assets/img/onagore@2x.png'
+import onagore_white from '.././assets/img/onagore_white.png'
+import onagore_white_2x from '.././assets/img/onagore_white@2x.png'
 
 class Header extends Component {
   constructor (props) {
@@ -124,15 +126,21 @@ class Header extends Component {
                 </li>
               </a>
             </ul>}
-          <a href='http://onagore.com' className='onagore-ctn'>
-            {!isActive && <span>Bir</span>}
-            <img
-              className='img-fluid onagore'
-              src={onagore}
-              srcSet={`${onagore_2x}, 2x`}
-            />
-            {!isActive && <span>Projesi</span>}
-          </a>
+          {isActive &&
+            <a href='http://onagore.com' className='onagore-ctn'>
+              {menuType !== 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore}
+                  srcSet={`${onagore_2x}, 2x`}
+                />}
+              {menuType === 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore_white}
+                  srcSet={`${onagore_white_2x}, 2x`}
+                />}
+            </a>}
 
         </Col>
       </Row>

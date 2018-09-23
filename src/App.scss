@@ -15,30 +15,41 @@ body {
   max-width: 1620px !important;
   // padding-left: 150px !important;
   // padding-right: 150px !important; 
-  .intro-text {
-    padding-top: 4rem;
-    span {
-      font-family: 'Anafor Basic' !important;
+  .main-ctn{
+    padding-bottom: 14rem;
+    .about-ctn {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+      .key {
+        font-family: 'Anafor Basic';
+      }
+    }
+    .intro-text {
+      padding-top: 4rem;
+      span {
+        font-family: 'Anafor Basic' !important;
+      }
+    }
+    .center {
+      position: relative;
+  
+      .hero {
+        border: 2px solid black;
+        width: 90%;
+        top: -10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wall {
+        position: absolute;
+        top: 75%;
+        left:6rem;
+        width: 80%;
+      }
     }
   }
-  .center {
-    position: relative;
 
-    .hero {
-      border: 2px solid black;
-      width: 90%;
-      top: -10px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .wall {
-      position: absolute;
-      top: 75%;
-      left:6rem;
-      width: 80%;
-    }
-  }
   .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -47,16 +58,7 @@ body {
       padding: 0 !important;
       z-index: 3;
       position: relative;
-      .menu-ctn {
-        list-style: none;
-        padding-inline-start: 0 !important;
-        position: absolute;
-        left: 0;
-        top: 2rem;
-        li {
-          font-size: 2rem;
-        }
-      }
+
       .hamburger-box {
         .hamburger-inner {
           width: 30px !important;
@@ -91,10 +93,26 @@ body {
     .lang{
       z-index: 3;
     }
-  }
 
+  }
+  .menu-ctn {
+    list-style: none;
+    padding-inline-start: 0 !important;
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    z-index: 3;
+    padding-bottom: 14rem;
+    li {
+      font-size: 2rem;
+      &:hover {
+        cursor: pointer;
+        color: gray;
+      }
+    }
+  }
   .book {
-    padding-top: 14rem;
+    // padding-top: 14rem;
     padding-bottom: 6rem;
     .page-ctn {
       position: relative;

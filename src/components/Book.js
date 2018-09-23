@@ -9,7 +9,6 @@ class Book extends Component {
     for (let index = 0; index < i; index++) {
       arr.push(index)
     }
-    console.log(arr.length)
     return (
       <Row className='book'>
         {map(arr, (item, index) => {

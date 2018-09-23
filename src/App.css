@@ -10,24 +10,31 @@ body {
 
 .container-fluid {
   max-width: 1620px !important; }
-  .container-fluid .intro-text {
-    padding-top: 4rem; }
-    .container-fluid .intro-text span {
-      font-family: 'Anafor Basic' !important; }
-  .container-fluid .center {
-    position: relative; }
-    .container-fluid .center .hero {
-      border: 2px solid black;
-      width: 90%;
-      top: -10px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-    .container-fluid .center .wall {
-      position: absolute;
-      top: 75%;
-      left: 6rem;
-      width: 80%; }
+  .container-fluid .main-ctn {
+    padding-bottom: 14rem; }
+    .container-fluid .main-ctn .about-ctn {
+      padding-top: 2rem;
+      padding-bottom: 4rem; }
+      .container-fluid .main-ctn .about-ctn .key {
+        font-family: 'Anafor Basic'; }
+    .container-fluid .main-ctn .intro-text {
+      padding-top: 4rem; }
+      .container-fluid .main-ctn .intro-text span {
+        font-family: 'Anafor Basic' !important; }
+    .container-fluid .main-ctn .center {
+      position: relative; }
+      .container-fluid .main-ctn .center .hero {
+        border: 2px solid black;
+        width: 90%;
+        top: -10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      .container-fluid .main-ctn .center .wall {
+        position: absolute;
+        top: 75%;
+        left: 6rem;
+        width: 80%; }
   .container-fluid .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -36,14 +43,6 @@ body {
       padding: 0 !important;
       z-index: 3;
       position: relative; }
-      .container-fluid .header-ctn .hamburger .menu-ctn {
-        list-style: none;
-        padding-inline-start: 0 !important;
-        position: absolute;
-        left: 0;
-        top: 2rem; }
-        .container-fluid .header-ctn .hamburger .menu-ctn li {
-          font-size: 2rem; }
       .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner {
         width: 30px !important;
         height: 3px !important;
@@ -69,8 +68,20 @@ body {
         font-size: 3.3rem; }
     .container-fluid .header-ctn .lang {
       z-index: 3; }
+  .container-fluid .menu-ctn {
+    list-style: none;
+    padding-inline-start: 0 !important;
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    z-index: 3;
+    padding-bottom: 14rem; }
+    .container-fluid .menu-ctn li {
+      font-size: 2rem; }
+      .container-fluid .menu-ctn li:hover {
+        cursor: pointer;
+        color: gray; }
   .container-fluid .book {
-    padding-top: 14rem;
     padding-bottom: 6rem; }
     .container-fluid .book .page-ctn {
       position: relative; }

@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
 
 class Header extends Component {
+  constructor (props) {
+    super(props)
+  }
   render () {
-    const { isActive } = this.props
-    console.log(this.props)
+    const { isActive, menuType } = this.props
     return (
       <Row>
         <Col>
@@ -16,16 +18,10 @@ class Header extends Component {
               <span className='hamburger-box'>
                 <span className='hamburger-inner' />
               </span>
-              {isActive &&
-                <ul className='menu-ctn'>
-                  <li>HAKKINDA</li>
-                  <li>İÇİNDEKİLER</li>
-                  <li>KÜNYE</li>
-                  <li>SAYFALAR</li>
-                  <li>İNDİR</li>
-                </ul>}
+
             </span>
-            <div className='logo'><span>YAY{' '}</span>POP</div>
+            {menuType === '' &&
+              <div className='logo'><span>YAY{' '}</span>POP</div>}
             <div className='lang'>
               <span>
                 EN{' '}
@@ -38,7 +34,18 @@ class Header extends Component {
               </span>
             </div>
           </div>
-
+          {isActive &&
+            <ul className='menu-ctn'>
+              <li onClick={e => this.props.menuHandler('hakkinda')}>
+                HAKKINDA
+              </li>
+              <li onClick={e => this.props.menuHandler('icindekiler')}>
+                İÇİNDEKİLER
+              </li>
+              <li onClick={e => this.props.menuHandler('kunye')}>KÜNYE</li>
+              <li onClick={e => this.props.scrollToHandler(e)}>SAYFALAR</li>
+              <a href='#'><li>İNDİR</li></a>
+            </ul>}
         </Col>
       </Row>
     )

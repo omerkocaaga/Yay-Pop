@@ -10,30 +10,68 @@ import './assets/style/hamburgers.css'
 class App extends Component {
   constructor (props) {
     super(props)
+    this.book = React.createRef()
     this.state = {
-      isActive: false
+      isActive: false,
+      scrollPages: false,
+      menuType: ''
     }
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
+    this.rootScrollToHandler = this.rootScrollToHandler.bind(this)
+    this.rootMenuHandler = this.rootMenuHandler.bind(this)
+  }
+
+  componentDidUpdate () {
+    const { scrollPages = false } = this.state
+    if (scrollPages) {
+      const { current: { offsetTop } } = this.book
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' })
+    }
   }
 
   rootOnClickHandler (e) {
-    console.log(e)
     e.persist()
     if (e) {
-      const { isActive } = this.state
+      const { isActive = false } = this.state
       this.setState({
-        isActive: !isActive
+        isActive: !isActive,
+        scrollPages: false,
+        menuType: ''
       })
     }
   }
 
+  rootScrollToHandler (e) {
+    if (e) {
+      this.setState({
+        scrollPages: true
+      })
+    }
+  }
+
+  rootMenuHandler (type) {
+    this.setState({
+      menuType: type
+    })
+  }
+
   render () {
-    const { isActive = false } = this.state
+    const { isActive = false, menuType = '' } = this.state
+    console.log(menuType)
     return (
       <Container fluid>
-        <Header onClickHandler={this.rootOnClickHandler} isActive={isActive} />
-        <Main />
-        <Book />
+        <Header
+          onClickHandler={this.rootOnClickHandler}
+          scrollToHandler={this.rootScrollToHandler}
+          menuHandler={this.rootMenuHandler}
+          isActive={isActive}
+          menuType={menuType}
+        />
+        <Main isActive={isActive} menuType={menuType} />
+        <div ref={this.book}>
+          <Book />
+
+        </div>
       </Container>
     )
   }

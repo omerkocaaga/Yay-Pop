@@ -10,18 +10,22 @@ body {
   background-size: auto;
   &.magenta {
     background-color: #ec5b9e !important;
+    background-image:none;
     transition: background-color 250ms linear;
   }
   &.cyan {
     background-color: #018dcb !important;
+    background-image:none;
     transition: background-color 250ms linear;
   }
   &.yellow {
     background-color: #f5f16f !important;
+    background-image:none;
     transition: background-color 250ms linear;
   }
   &.key-black {
     background-color: #231f20 !important;
+    background-image:none;
     transition: background-color 250ms linear;
   }
 }
@@ -31,6 +35,10 @@ body {
   max-width: 1620px !important;
   // padding-left: 150px !important;
   // padding-right: 150px !important; 
+  &.key-black-text{
+    color: white !important;
+
+  }
   .main-ctn{
     padding-bottom: 14rem;
     .about-ctn {
@@ -80,6 +88,15 @@ body {
           width: 30px !important;
           height: 3px !important;
           border-radius: 0 !important;
+          &.white-bg {
+            background-color: white;
+            &::before {
+              background-color: white;
+            }
+            &::after {
+              background-color: white;
+            }
+          }
           &::before {
             width: 30px !important;
             height: 3px !important;
@@ -140,6 +157,7 @@ body {
           left: calc(50% - 15px);
           bottom: 2rem;
           transform: translateX(-50%);
+          color: black !important;
         }
       }
       &:nth-child(odd){
@@ -149,6 +167,7 @@ body {
           left: calc(50% + 20px);
           bottom: 2rem;
           transform: translateX(-50%);
+          color: black !important;
         }
       }
       &:first-child {

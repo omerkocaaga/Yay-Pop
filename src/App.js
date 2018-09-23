@@ -20,7 +20,7 @@ class App extends Component {
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
     this.rootScrollToHandler = this.rootScrollToHandler.bind(this)
     this.rootMenuHandler = this.rootMenuHandler.bind(this)
-    this.rootHoverHandler = this.rootHoverHandler.bind(this)
+    // this.rootHoverHandler = this.rootHoverHandler.bind(this)
   }
 
   componentDidUpdate () {
@@ -61,22 +61,20 @@ class App extends Component {
     })
   }
 
-  rootHoverHandler (type) {
-    this.setState({
-      hoverType: type
-    })
-  }
+  // rootHoverHandler (type) {
+  //   this.setState({
+  //     hoverType: type
+  //   })
+  // }
 
   render () {
-    const {
-      isActive = false,
-      menuType = '',
-      hoverType = '',
-      scrollPages
-    } = this.state
-    console.log(scrollPages)
+    const { isActive = false, menuType = '', hoverType = '' } = this.state
+    console.log(hoverType)
     return (
-      <Container fluid>
+      <Container
+        fluid
+        className={`${menuType === 'kunye' ? 'key-black-text' : ''}`}
+      >
         <Helmet>
           <body
             className={`${isActive ? 'magenta' : ''} ${hoverType === 'hakkinda' ? 'cyan' : ''} ${hoverType === 'icindekiler' ? 'yellow' : ''} ${hoverType === 'kunye' ? 'key-black' : ''} ${menuType === 'hakkinda' ? 'cyan' : ''} ${menuType === 'icindekiler' ? 'yellow' : ''} ${menuType === 'kunye' ? 'key-black' : ''}`}

@@ -16,7 +16,9 @@ class Header extends Component {
               onClick={e => this.props.onClickHandler(e)}
             >
               <span className='hamburger-box'>
-                <span className='hamburger-inner' />
+                <span
+                  className={`hamburger-inner ${menuType ? 'white-bg' : ''}`}
+                />
               </span>
 
             </span>
@@ -38,22 +40,22 @@ class Header extends Component {
             <ul className='menu-ctn'>
               <li
                 onClick={e => this.props.menuHandler('hakkinda')}
-                onMouseEnter={e => this.props.hoverHandler('hakkinda')}
-                onMouseLeave={e => this.props.hoverHandler('')}
+                // onMouseEnter={e => this.props.hoverHandler('hakkinda')}
+                // onMouseLeave={e => this.props.hoverHandler('')}
               >
                 HAKKINDA
               </li>
               <li
                 onClick={e => this.props.menuHandler('icindekiler')}
-                onMouseEnter={e => this.props.hoverHandler('icindekiler')}
-                onMouseLeave={e => this.props.hoverHandler('')}
+                // onMouseEnter={e => this.props.hoverHandler('icindekiler')}
+                // onMouseLeave={e => this.props.hoverHandler('')}
               >
                 İÇİNDEKİLER
               </li>
               <li
                 onClick={e => this.props.menuHandler('kunye')}
-                onMouseEnter={e => this.props.hoverHandler('kunye')}
-                onMouseLeave={e => this.props.hoverHandler('')}
+                // onMouseEnter={e => this.props.hoverHandler('kunye')}
+                // onMouseLeave={e => this.props.hoverHandler('')}
               >
                 KÜNYE
               </li>

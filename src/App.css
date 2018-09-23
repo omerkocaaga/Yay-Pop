@@ -9,19 +9,25 @@ body {
   background-size: auto; }
   body.magenta {
     background-color: #ec5b9e !important;
+    background-image: none;
     transition: background-color 250ms linear; }
   body.cyan {
     background-color: #018dcb !important;
+    background-image: none;
     transition: background-color 250ms linear; }
   body.yellow {
     background-color: #f5f16f !important;
+    background-image: none;
     transition: background-color 250ms linear; }
   body.key-black {
     background-color: #231f20 !important;
+    background-image: none;
     transition: background-color 250ms linear; }
 
 .container-fluid {
   max-width: 1620px !important; }
+  .container-fluid.key-black-text {
+    color: white !important; }
   .container-fluid .main-ctn {
     padding-bottom: 14rem; }
     .container-fluid .main-ctn .about-ctn {
@@ -59,6 +65,12 @@ body {
         width: 30px !important;
         height: 3px !important;
         border-radius: 0 !important; }
+        .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg {
+          background-color: white; }
+          .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg::before {
+            background-color: white; }
+          .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg::after {
+            background-color: white; }
         .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner::before {
           width: 30px !important;
           height: 3px !important;
@@ -103,14 +115,16 @@ body {
           position: absolute;
           left: calc(50% - 15px);
           bottom: 2rem;
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+          color: black !important; }
       .container-fluid .book .page-ctn:nth-child(odd) {
         padding-left: 50px; }
         .container-fluid .book .page-ctn:nth-child(odd) div {
           position: absolute;
           left: calc(50% + 20px);
           bottom: 2rem;
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+          color: black !important; }
       .container-fluid .book .page-ctn:first-child {
         visibility: hidden; }
       .container-fluid .book .page-ctn:last-child {

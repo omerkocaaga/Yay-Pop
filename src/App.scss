@@ -3,11 +3,35 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+  &:hover {
+    color: black !important;
+    text-decoration: none !important;
+
+  }
+  &:focus {
+    color: black !important;
+
+  }
+  &:active {
+    color: black !important;
+
+  }
+  &:focus-within {
+    color: black !important;
+  }
+  &:visited {
+      color: black;
+  }
+}
+
 body {
   background-color: #e5e5e5 !important;
   font-family: 'Terminal Grotesque' !important;
   background: url(./assets/img/cizgi.png) no-repeat center 6% scroll; 
   background-size: auto;
+  color: #1d1d1d;
   &.magenta {
     background-color: #ec5b9e !important;
     background-image:none;
@@ -27,6 +51,14 @@ body {
     background-color: #231f20 !important;
     background-image:none;
     transition: background-color 250ms linear;
+    a{
+      color: white !important;
+      &:hover {
+        color: white !important;
+        text-decoration: none !important;
+    
+      }
+    }
   }
 }
 
@@ -71,7 +103,16 @@ body {
       }
     }
   }
-
+  .onagore-ctn {
+    position: absolute;
+    top: 80vh;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 50%;
+      margin-top: -10px;
+    }
+  }
   .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -121,13 +162,27 @@ body {
     .lang{
       z-index: 3;
       cursor: pointer;
+      
       .en {
         position: relative;
+        &.true {
+          &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: 3px; 
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: white !important;
+          }
+      }
         &::after {
           position: absolute;
           content: '';
           height: 2px;
-          bottom: 1px; 
+          bottom: 3px; 
           margin: 0 auto;
           left: 0;
           right: 0;
@@ -137,11 +192,24 @@ body {
       }
       .tr {
         position: relative;
+        &.true {
+          &::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            bottom: 3px; 
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: white !important;
+          }
+      }
         &::after {
           position: absolute;
           content: '';
           height: 2px;
-          bottom: 1px; 
+          bottom: 3px; 
           margin: 0 auto;
           left: 0;
           right: 0;
@@ -164,13 +232,68 @@ body {
       span {
         font-size: 2rem;
         position: relative;
+        &.true {
+          &:hover {
+            &::after {
+              position: absolute;
+              content: '';
+              height: 2.6px;
+              bottom: 6px; 
+              margin: 0 auto;
+              left: 0;
+              right: 0;
+              width: 100%;
+              background-color: white !important;
+            }
+          }
+
+        }
+        &.kunye {
+          &::after {
+            position: absolute;
+            content: '';
+            height: 2.6px;
+            bottom: 6px; 
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: white !important;
+          }
+          &.active {
+            &::after {
+              position: absolute;
+              content: '';
+              height: 2.6px;
+              bottom: 6px; 
+              margin: 0 auto;
+              left: 0;
+              right: 0;
+              width: 100%;
+              background-color: white !important;
+            } 
+          }
+        }
+        &.active {
+          &::after {
+            position: absolute;
+            content: '';
+            height: 2.6px;
+            bottom: 6px; 
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: black;
+          } 
+        }
         &:hover {
           cursor: pointer;
           &::after {
             position: absolute;
             content: '';
-            height: 3px;
-            bottom: 3px; 
+            height: 2.6px;
+            bottom: 6px; 
             margin: 0 auto;
             left: 0;
             right: 0;
@@ -228,4 +351,13 @@ body {
   }
 
 }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
 

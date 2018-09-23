@@ -129,39 +129,29 @@ class Main extends Component {
         {menuType === 'kunye' &&
           <Col lg={{ size: 6, offset: 4 }} className='about-ctn'>
             <p>
-              <div className='key'>
+              <span className='key'>
                 Editörler
-              </div>
-              <div>
-                Okay Karadayılar + Ali Taptık (Onagöre), Merve Ünsal
-              </div>
+              </span><br />
+              Okay Karadayılar + Ali Taptık (Onagöre), Merve Ünsal
             </p>
             <p>
-              <div className='key'>
+              <span className='key'>
                 Asistanlar
-              </div>
-              <div>
-                Zeynep Karababa, Rana İncesoy
-              </div>
+              </span><br />
+              Zeynep Karababa, Rana İncesoy
             </p>
             <p>
-              <div className='key'>
+              <span className='key'>
                 Web Programlama
-              </div>
-              <div>
-                Ömer Faruk Kocaağa
-              </div>
+              </span><br />
+              Ömer Faruk Kocaağa
             </p>
             <p>
-              <div className='key'>
+              <span className='key'>
                 Yazı Tipleri
-              </div>
-              <div>
-                Odee - Erman Yılmaz
-              </div>
-              <div>
-                Terminal Grotesque - Raphaël Bastide
-              </div>
+              </span><br />
+              Odee - Erman Yılmaz<br />
+              Terminal Grotesque - Raphaël Bastide
             </p>
           </Col>}
       </Row>

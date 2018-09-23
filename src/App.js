@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
+import { Helmet } from 'react-helmet'
 import Main from './components/Main'
 import Header from './components/Header'
 import Book from './components/Book'
@@ -19,6 +20,7 @@ class App extends Component {
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
     this.rootScrollToHandler = this.rootScrollToHandler.bind(this)
     this.rootMenuHandler = this.rootMenuHandler.bind(this)
+    this.rootHoverHandler = this.rootHoverHandler.bind(this)
   }
 
   componentDidUpdate () {
@@ -26,6 +28,9 @@ class App extends Component {
     if (scrollPages) {
       const { current: { offsetTop } } = this.book
       window.scrollTo({ top: offsetTop, behavior: 'smooth' })
+      this.setState({
+        scrollPages: false
+      })
     }
   }
 
@@ -36,7 +41,8 @@ class App extends Component {
       this.setState({
         isActive: !isActive,
         scrollPages: false,
-        menuType: ''
+        menuType: '',
+        hoverType: ''
       })
     }
   }
@@ -55,15 +61,32 @@ class App extends Component {
     })
   }
 
+  rootHoverHandler (type) {
+    this.setState({
+      hoverType: type
+    })
+  }
+
   render () {
-    const { isActive = false, menuType = '' } = this.state
-    console.log(menuType)
+    const {
+      isActive = false,
+      menuType = '',
+      hoverType = '',
+      scrollPages
+    } = this.state
+    console.log(scrollPages)
     return (
       <Container fluid>
+        <Helmet>
+          <body
+            className={`${isActive ? 'magenta' : ''} ${hoverType === 'hakkinda' ? 'cyan' : ''} ${hoverType === 'icindekiler' ? 'yellow' : ''} ${hoverType === 'kunye' ? 'key-black' : ''} ${menuType === 'hakkinda' ? 'cyan' : ''} ${menuType === 'icindekiler' ? 'yellow' : ''} ${menuType === 'kunye' ? 'key-black' : ''}`}
+          />
+        </Helmet>
         <Header
           onClickHandler={this.rootOnClickHandler}
           scrollToHandler={this.rootScrollToHandler}
           menuHandler={this.rootMenuHandler}
+          hoverHandler={this.rootHoverHandler}
           isActive={isActive}
           menuType={menuType}
         />

@@ -7,13 +7,25 @@ body {
   font-family: 'Terminal Grotesque' !important;
   background: url(./assets/img/cizgi.png) no-repeat center 6% scroll;
   background-size: auto; }
+  body.magenta {
+    background-color: #ec5b9e !important;
+    transition: background-color 250ms linear; }
+  body.cyan {
+    background-color: #018dcb !important;
+    transition: background-color 250ms linear; }
+  body.yellow {
+    background-color: #f5f16f !important;
+    transition: background-color 250ms linear; }
+  body.key-black {
+    background-color: #231f20 !important;
+    transition: background-color 250ms linear; }
 
 .container-fluid {
   max-width: 1620px !important; }
   .container-fluid .main-ctn {
     padding-bottom: 14rem; }
     .container-fluid .main-ctn .about-ctn {
-      padding-top: 2rem;
+      padding-top: 5rem;
       padding-bottom: 4rem; }
       .container-fluid .main-ctn .about-ctn .key {
         font-family: 'Anafor Basic'; }
@@ -72,8 +84,8 @@ body {
     list-style: none;
     padding-inline-start: 0 !important;
     position: absolute;
-    left: 2rem;
-    top: 7rem;
+    left: 1rem;
+    top: 10rem;
     z-index: 3;
     padding-bottom: 14rem; }
     .container-fluid .menu-ctn li {

@@ -33,8 +33,6 @@ body {
 
 .container-fluid {
   max-width: 1620px !important;
-  // padding-left: 150px !important;
-  // padding-right: 150px !important; 
   &.key-black-text{
     color: white !important;
 
@@ -43,7 +41,7 @@ body {
     padding-bottom: 14rem;
     .about-ctn {
       padding-top: 5rem;
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
       .key {
         font-family: 'Anafor Basic';
       }
@@ -111,17 +109,12 @@ body {
       }
     }
     .logo {
-      font-size: 3.7rem;
       position: fixed;
-      top: 120px;
+      top: 150px;
       left:0;
       right: 0;
-      text-align: center;
       z-index: 2;
-      span {
-        font-family: 'Anafor Basic';
-        font-size: 3.3rem;
-      }
+      width: 50%;
     }
     .lang{
       z-index: 3;
@@ -145,7 +138,7 @@ body {
     }
   }
   .book {
-    // padding-top: 14rem;
+    padding-top: 2rem;
     padding-bottom: 6rem;
     .page-ctn {
       position: relative;

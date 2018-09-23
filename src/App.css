@@ -32,7 +32,7 @@ body {
     padding-bottom: 14rem; }
     .container-fluid .main-ctn .about-ctn {
       padding-top: 5rem;
-      padding-bottom: 4rem; }
+      padding-bottom: 2rem; }
       .container-fluid .main-ctn .about-ctn .key {
         font-family: 'Anafor Basic'; }
     .container-fluid .main-ctn .intro-text {
@@ -80,16 +80,12 @@ body {
           height: 3px !important;
           border-radius: 0 !important; }
     .container-fluid .header-ctn .logo {
-      font-size: 3.7rem;
       position: fixed;
-      top: 120px;
+      top: 150px;
       left: 0;
       right: 0;
-      text-align: center;
-      z-index: 2; }
-      .container-fluid .header-ctn .logo span {
-        font-family: 'Anafor Basic';
-        font-size: 3.3rem; }
+      z-index: 2;
+      width: 50%; }
     .container-fluid .header-ctn .lang {
       z-index: 3; }
   .container-fluid .menu-ctn {
@@ -106,6 +102,7 @@ body {
         cursor: pointer;
         color: gray; }
   .container-fluid .book {
+    padding-top: 2rem;
     padding-bottom: 6rem; }
     .container-fluid .book .page-ctn {
       position: relative; }

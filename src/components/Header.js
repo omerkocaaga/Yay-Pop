@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
+import logo from '.././assets/img/logo.png'
+import logo_2x from '.././assets/img/logo@2x.png'
 
 class Header extends Component {
   constructor (props) {
@@ -17,13 +19,17 @@ class Header extends Component {
             >
               <span className='hamburger-box'>
                 <span
-                  className={`hamburger-inner ${menuType ? 'white-bg' : ''}`}
+                  className={`hamburger-inner ${menuType === 'kunye' ? 'white-bg' : ''}`}
                 />
               </span>
 
             </span>
             {menuType === '' &&
-              <div className='logo'><span>YAY{' '}</span>POP</div>}
+              <img
+                className='logo mx-auto img-fluid'
+                src={logo}
+                srcSet={`${logo_2x}, 2x`}
+              />}
             <div className='lang'>
               <span>
                 EN{' '}

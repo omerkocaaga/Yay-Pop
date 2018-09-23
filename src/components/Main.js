@@ -49,13 +49,13 @@ class Main extends Component {
             <div className='center'>
               <a href='#'>
                 <img
-                  src='https://via.placeholder.com/200x280'
+                  src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
                   className='hero'
                 />
                 <img
                   className='mx-auto img-fluid wall'
                   src={duvar}
-                  srcSet={`${duvar}, 2x`}
+                  srcSet={`${duvar_2x}, 2x`}
                   alt={duvar}
                 />
               </a>
@@ -98,7 +98,7 @@ class Main extends Component {
             <div className='center'>
               <a href='#'>
                 <img
-                  src='https://via.placeholder.com/200x280'
+                  src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
                   className='hero'
                 />
                 {/* <img

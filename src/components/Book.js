@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
+import { images } from '../utilities/data.json'
 import map from 'lodash.map'
 
 class Book extends Component {
@@ -11,17 +12,18 @@ class Book extends Component {
     }
     return (
       <Row className='book'>
-        {map(arr, (item, index) => {
+        {map(images, (image, index) => {
+          let { url } = image
           return (
             <Col key={index} lg='2' md='6' sm='6' xs='6' className='page-ctn'>
               <a href='#'>
                 <img
                   className='mx-auto img-fluid'
-                  src='https://via.placeholder.com/200x280'
+                  src={process.env.PUBLIC_URL + url}
                 />
               </a>
 
-              <div>{item}</div>
+              <div>{index}</div>
             </Col>
           )
         })}

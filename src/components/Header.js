@@ -8,7 +8,7 @@ class Header extends Component {
     super(props)
   }
   render () {
-    const { isActive, menuType } = this.props
+    const { isActive, menuType, isEnglish, isTurkish } = this.props
     return (
       <Row>
         <Col>
@@ -31,14 +31,20 @@ class Header extends Component {
                 srcSet={`${logo_2x}, 2x`}
               />}
             <div className='lang'>
-              <span>
-                EN{' '}
+              <span
+                className={isEnglish ? 'en' : ''}
+                onClick={e => this.props.englishHandler(e)}
+              >
+                EN
               </span>
               <span>
-                /
+                {'  '}{'  '}/{'  '}{'  '}
               </span>
-              <span>
-                {' '}TR
+              <span
+                className={isTurkish ? 'tr' : ''}
+                onClick={e => this.props.turkishHandler(e)}
+              >
+                TR
               </span>
             </div>
           </div>
@@ -49,24 +55,38 @@ class Header extends Component {
                 // onMouseEnter={e => this.props.hoverHandler('hakkinda')}
                 // onMouseLeave={e => this.props.hoverHandler('')}
               >
-                HAKKINDA
+                {isTurkish && <span>HAKKINDA</span>}
+                {isEnglish && <span>ABOUT</span>}
+
               </li>
               <li
                 onClick={e => this.props.menuHandler('icindekiler')}
                 // onMouseEnter={e => this.props.hoverHandler('icindekiler')}
                 // onMouseLeave={e => this.props.hoverHandler('')}
               >
-                İÇİNDEKİLER
+                {isTurkish && <span>İÇİNDEKİLER</span>}
+                {isEnglish && <span>TABLE OF CONTENTS</span>}
               </li>
               <li
                 onClick={e => this.props.menuHandler('kunye')}
                 // onMouseEnter={e => this.props.hoverHandler('kunye')}
                 // onMouseLeave={e => this.props.hoverHandler('')}
               >
-                KÜNYE
+                {isTurkish && <span>KÜNYE</span>}
+                {isEnglish && <span>PEOPLE</span>}
+
               </li>
-              <li onClick={e => this.props.scrollToHandler(e)}>SAYFALAR</li>
-              <a href='#'><li>İNDİR</li></a>
+              <li onClick={e => this.props.scrollToHandler(e)}>
+                {isTurkish && <span>SAYFALAR</span>}
+                {isEnglish && <span>PAGES</span>}
+              </li>
+              <a href='#'>
+                <li>
+                  {isTurkish && <span>İNDİR</span>}
+                  {isEnglish && <span>DOWNLOAD</span>}
+
+                </li>
+              </a>
             </ul>}
         </Col>
       </Row>

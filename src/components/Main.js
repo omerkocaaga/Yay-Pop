@@ -5,7 +5,7 @@ import duvar_2x from '.././assets/img/duvar@2x.png'
 
 class Main extends Component {
   render () {
-    const { isActive, menuType } = this.props
+    const { isActive, menuType, isEnglish, isTurkish } = this.props
     return (
       <Row className='main-ctn'>
         {!isActive &&
@@ -129,27 +129,51 @@ class Main extends Component {
         {menuType === 'kunye' &&
           <Col lg={{ size: 6, offset: 4 }} className='about-ctn'>
             <p>
-              <span className='key'>
-                Editörler
-              </span><br />
+              {isTurkish &&
+                <span className='key'>
+                  Editörler
+                </span>}
+              {isEnglish &&
+                <span className='key'>
+                  Editors
+                </span>}
+              <br />
               Okay Karadayılar + Ali Taptık (Onagöre), Merve Ünsal
             </p>
             <p>
-              <span className='key'>
-                Asistanlar
-              </span><br />
+              {isTurkish &&
+                <span className='key'>
+                  Asistanlar
+                </span>}
+              {isEnglish &&
+                <span className='key'>
+                  Asistants
+                </span>}
+              <br />
               Zeynep Karababa, Rana İncesoy
             </p>
             <p>
-              <span className='key'>
-                Web Programlama
-              </span><br />
+              {isTurkish &&
+                <span className='key'>
+                  Web Programlama
+                </span>}
+              {isEnglish &&
+                <span className='key'>
+                  Web Developer
+                </span>}
+              <br />
               Ömer Faruk Kocaağa
             </p>
             <p>
-              <span className='key'>
-                Yazı Tipleri
-              </span><br />
+              {isTurkish &&
+                <span className='key'>
+                  Yazı Tipleri
+                </span>}
+              {isEnglish &&
+                <span className='key'>
+                  Typefaces
+                </span>}
+              <br />
               Odee - Erman Yılmaz<br />
               Terminal Grotesque - Raphaël Bastide
             </p>

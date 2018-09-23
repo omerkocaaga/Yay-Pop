@@ -62,7 +62,7 @@ body {
       z-index: 3;
       position: relative; }
       .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner {
-        width: 30px !important;
+        width: 24px !important;
         height: 3px !important;
         border-radius: 0 !important; }
         .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg {
@@ -70,13 +70,14 @@ body {
           .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg::before {
             background-color: white; }
           .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner.white-bg::after {
-            background-color: white; }
+            background-color: white;
+            top: -16px !important; }
         .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner::before {
-          width: 30px !important;
+          width: 24px !important;
           height: 3px !important;
           border-radius: 0 !important; }
         .container-fluid .header-ctn .hamburger .hamburger-box .hamburger-inner::after {
-          width: 30px !important;
+          width: 24px !important;
           height: 3px !important;
           border-radius: 0 !important; }
     .container-fluid .header-ctn .logo {
@@ -87,7 +88,32 @@ body {
       z-index: 2;
       width: 50%; }
     .container-fluid .header-ctn .lang {
-      z-index: 3; }
+      z-index: 3;
+      cursor: pointer; }
+      .container-fluid .header-ctn .lang .en {
+        position: relative; }
+        .container-fluid .header-ctn .lang .en::after {
+          position: absolute;
+          content: '';
+          height: 2px;
+          bottom: 1px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: black; }
+      .container-fluid .header-ctn .lang .tr {
+        position: relative; }
+        .container-fluid .header-ctn .lang .tr::after {
+          position: absolute;
+          content: '';
+          height: 2px;
+          bottom: 1px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: black; }
   .container-fluid .menu-ctn {
     list-style: none;
     padding-inline-start: 0 !important;
@@ -96,11 +122,21 @@ body {
     top: 10rem;
     z-index: 3;
     padding-bottom: 14rem; }
-    .container-fluid .menu-ctn li {
-      font-size: 2rem; }
-      .container-fluid .menu-ctn li:hover {
-        cursor: pointer;
-        color: gray; }
+    .container-fluid .menu-ctn li span {
+      font-size: 2rem;
+      position: relative; }
+      .container-fluid .menu-ctn li span:hover {
+        cursor: pointer; }
+        .container-fluid .menu-ctn li span:hover::after {
+          position: absolute;
+          content: '';
+          height: 3px;
+          bottom: 3px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: black; }
   .container-fluid .book {
     padding-top: 2rem;
     padding-bottom: 6rem; }

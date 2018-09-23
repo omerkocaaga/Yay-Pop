@@ -83,25 +83,27 @@ body {
 
       .hamburger-box {
         .hamburger-inner {
-          width: 30px !important;
+          width: 24px !important;
           height: 3px !important;
           border-radius: 0 !important;
           &.white-bg {
             background-color: white;
             &::before {
               background-color: white;
+              // top: -8px !important;
             }
             &::after {
               background-color: white;
+              top: -16px !important;
             }
           }
           &::before {
-            width: 30px !important;
+            width: 24px !important;
             height: 3px !important;
             border-radius: 0 !important;
           }
           &::after {
-            width: 30px !important;
+            width: 24px !important;
             height: 3px !important;
             border-radius: 0 !important;
           }
@@ -118,6 +120,35 @@ body {
     }
     .lang{
       z-index: 3;
+      cursor: pointer;
+      .en {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: '';
+          height: 2px;
+          bottom: 1px; 
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: black;
+        } 
+      }
+      .tr {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: '';
+          height: 2px;
+          bottom: 1px; 
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: black;
+        } 
+      }
     }
 
   }
@@ -130,11 +161,25 @@ body {
     z-index: 3;
     padding-bottom: 14rem;
     li {
-      font-size: 2rem;
-      &:hover {
-        cursor: pointer;
-        color: gray;
+      span {
+        font-size: 2rem;
+        position: relative;
+        &:hover {
+          cursor: pointer;
+          &::after {
+            position: absolute;
+            content: '';
+            height: 3px;
+            bottom: 3px; 
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: black;
+          } 
+        }
       }
+
     }
   }
   .book {

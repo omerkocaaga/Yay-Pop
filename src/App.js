@@ -15,11 +15,15 @@ class App extends Component {
     this.state = {
       isActive: false,
       scrollPages: false,
-      menuType: ''
+      menuType: '',
+      isEnglish: false,
+      isTurkish: true
     }
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
     this.rootScrollToHandler = this.rootScrollToHandler.bind(this)
     this.rootMenuHandler = this.rootMenuHandler.bind(this)
+    this.rootEnglishHandler = this.rootEnglishHandler.bind(this)
+    this.rootTurkishHandler = this.rootTurkishHandler.bind(this)
     // this.rootHoverHandler = this.rootHoverHandler.bind(this)
   }
 
@@ -61,6 +65,20 @@ class App extends Component {
     })
   }
 
+  rootEnglishHandler (e) {
+    this.setState({
+      isEnglish: true,
+      isTurkish: false
+    })
+  }
+
+  rootTurkishHandler (e) {
+    this.setState({
+      isEnglish: false,
+      isTurkish: true
+    })
+  }
+
   // rootHoverHandler (type) {
   //   this.setState({
   //     hoverType: type
@@ -68,8 +86,14 @@ class App extends Component {
   // }
 
   render () {
-    const { isActive = false, menuType = '', hoverType = '' } = this.state
-    console.log(hoverType)
+    const {
+      isActive = false,
+      menuType = '',
+      hoverType = '',
+      isEnglish = false,
+      isTurkish = true
+    } = this.state
+    console.log('isEnglish:', isEnglish, 'isTurkish:', isTurkish)
     return (
       <Container
         fluid
@@ -85,10 +109,19 @@ class App extends Component {
           scrollToHandler={this.rootScrollToHandler}
           menuHandler={this.rootMenuHandler}
           hoverHandler={this.rootHoverHandler}
+          englishHandler={this.rootEnglishHandler}
+          turkishHandler={this.rootTurkishHandler}
           isActive={isActive}
           menuType={menuType}
+          isEnglish={isEnglish}
+          isTurkish={isTurkish}
         />
-        <Main isActive={isActive} menuType={menuType} />
+        <Main
+          isActive={isActive}
+          menuType={menuType}
+          isEnglish={isEnglish}
+          isTurkish={isTurkish}
+        />
         <div ref={this.book}>
           <Book />
 

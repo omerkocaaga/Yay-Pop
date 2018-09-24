@@ -5,6 +5,8 @@
 
 a {
   text-decoration: none !important;
+  color: black !important;
+
   &:hover {
     color: black !important;
     text-decoration: none !important;
@@ -22,7 +24,7 @@ a {
     color: black !important;
   }
   &:visited {
-      color: black;
+      color: black !important;
   }
 }
 
@@ -62,6 +64,14 @@ body {
   }
 }
 
+.dn {
+  display: none !important;
+  top:130px !important;
+}
+
+.nd {
+  display: block !important;
+}
 
 .container-fluid {
   max-width: 1620px !important;
@@ -232,10 +242,10 @@ body {
     list-style: none;
     padding-inline-start: 0 !important;
     position: absolute;
-    left: 1rem;
-    top: 10rem;
+    // left: 1rem;
+    // top: 10rem;
     z-index: 3;
-    padding-bottom: 14rem;
+    padding-top: 4rem;
     li {
       span {
         font-size: 2rem;
@@ -361,11 +371,171 @@ body {
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) { 
+  body{
+    background-position: center 2% !important;
+  }
+  .dn {
+    display: block !important;
+  }
+  .nd {
+    display: none !important;
+  }
+  .book {
+    padding-top: 4rem !important;
+    margin-top: 4rem !important;
+  }
+  .menu-ctn {
+    width: 100% !important;
+    left:0 !important;
+    top: -260px;
+    li {
+      span {
+        font-size: 1.5rem !important;
+        margin-left: 10% !important;
+      }
+    }
+  }
+  .onagore-ctn {
+    top:90vh !important;
+    img {
+      width: 30% !important;
+      margin-left: 10% !important;
+    }
+  }
+  .onagore-st-ctn {
+    width: 90% !important;
+    padding-left: 10% !important;
+    img {
+      width: 30% !important;
+    }
+  }
+  .header-ctn {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding-top: 2rem !important;
+    &.mobile {
+      padding-bottom: 18rem;
+    }
+    .logo {
+      width: 70% !important;
+      top:130px !important;
+
+    }
+
+  }
+  .main-ctn {
+    padding-bottom: 0 !important;
+    .about-ctn {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+    .hid {
+      display: none !important;
+    }
+    .center {
+      padding-top: 2rem !important;
+      a{
+        .wall {
+          left:3rem !important;
+        }
+      }
+    }
+    .intro-text{
+        width: 90% !important;
+        margin: 0 auto !important;
+
+    }
+    .first-p{
+      padding-top: 8rem !important;
+    }
+  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-position: center 3% !important;
+  }
+  .dn {
+    display: block !important;
+  }
+  .nd {
+    display: none !important;
+  }
+  .header-ctn {
+    width: 80% !important;
+    margin: 0 auto !important;
+    &.mobile {
+      padding-bottom: 18rem;
+    }
+    .logo {
+      width: 50% !important;
+      top: 180px !important;
+    }
+  }
+  .book {
+    padding-top: 4rem !important;
+    margin-top: 4rem !important; 
+  }
+  .menu-ctn {
+    width: 100% !important;
+    left:0 !important;
+    top: -230px;
+    padding-top: 6rem !important;
+    li {
+      span {
+        font-size: 2rem !important;
+        margin-left: 11% !important;
+      }
+    }
+  }
+  .onagore-ctn {
+    top:90vh !important;
+    img {
+      width: 50% !important;
+      margin-left: 30% !important;
+    }
+  }
+  .onagore-st-ctn {
+    width: 80% !important;
+    padding-left: 10% !important;
+    img {
+      width: 14% !important;
+    }
+    span {
+      font-size: 0.8rem !important;
+    }
+  }
+  .main-ctn {
+    .about-ctn {
+      width: 80% !important;
+      margin: 0 auto !important;
+      padding-top: 15rem !important;
+    }
+    .hid {
+      display: none !important;
+    }
+    .center {
+      padding-top: 2rem !important;
+      .hero {
+        width: 80% !important;
+      }
+      .wall {
+        left: 7rem !important;
+      }
+    }
+    .intro-text{
+      width: 80% !important;
+      margin: 0 auto !important;
+
+    }
+    .first-p{
+      padding-top: 18rem !important;
+    }
+  }
+}
 

@@ -2,21 +2,20 @@ import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
 import logo from '.././assets/img/logo.png'
 import logo_2x from '.././assets/img/logo@2x.png'
+import logo_white from '.././assets/img/logo_white.png'
+import logo_white_2x from '.././assets/img/logo_white@2x.png'
 import onagore from '.././assets/img/onagore.png'
 import onagore_2x from '.././assets/img/onagore@2x.png'
 import onagore_white from '.././assets/img/onagore_white.png'
 import onagore_white_2x from '.././assets/img/onagore_white@2x.png'
 
 class Header extends Component {
-  constructor (props) {
-    super(props)
-  }
   render () {
     const { isActive, menuType, isEnglish, isTurkish } = this.props
     return (
       <Row>
-        <Col>
-          <div className='header-ctn'>
+        <Col lg='12'>
+          <div className={`header-ctn ${isActive ? 'mobile' : ''}`}>
             <span
               className={`hamburger hamburger--collapse ${isActive ? 'is-active' : ''}`}
               onClick={e => this.props.onClickHandler(e)}
@@ -28,11 +27,17 @@ class Header extends Component {
               </span>
 
             </span>
-            {menuType === '' &&
+            {menuType !== 'kunye' &&
               <img
-                className='logo mx-auto img-fluid'
+                className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
                 src={logo}
                 srcSet={`${logo_2x}, 2x`}
+              />}
+            {menuType === 'kunye' &&
+              <img
+                className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
+                src={logo_white}
+                srcSet={`${logo_white_2x}, 2x`}
               />}
             <div className='lang'>
               <span
@@ -52,6 +57,72 @@ class Header extends Component {
               </span>
             </div>
           </div>
+          {isActive &&
+            menuType === '' &&
+            <a href='http://onagore.com' className='onagore-ctn'>
+              {menuType !== 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore}
+                  srcSet={`${onagore_2x}, 2x`}
+                />}
+              {menuType === 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore_white}
+                  srcSet={`${onagore_white_2x}, 2x`}
+                />}
+            </a>}
+          {isActive &&
+            menuType === 'kunye' &&
+            <a href='http://onagore.com' className='onagore-ctn nd'>
+              {menuType !== 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore}
+                  srcSet={`${onagore_2x}, 2x`}
+                />}
+              {menuType === 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore_white}
+                  srcSet={`${onagore_white_2x}, 2x`}
+                />}
+            </a>}
+          {isActive &&
+            menuType === 'icindekiler' &&
+            <a href='http://onagore.com' className='onagore-ctn nd'>
+              {menuType !== 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore}
+                  srcSet={`${onagore_2x}, 2x`}
+                />}
+              {menuType === 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore_white}
+                  srcSet={`${onagore_white_2x}, 2x`}
+                />}
+            </a>}
+          {isActive &&
+            menuType === 'hakkinda' &&
+            <a href='http://onagore.com' className='onagore-ctn nd'>
+              {menuType !== 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore}
+                  srcSet={`${onagore_2x}, 2x`}
+                />}
+              {menuType === 'kunye' &&
+                <img
+                  className='img-fluid onagore'
+                  src={onagore_white}
+                  srcSet={`${onagore_white_2x}, 2x`}
+                />}
+            </a>}
+        </Col>
+        <Col lg='4'>
           {isActive &&
             <ul className='menu-ctn'>
               <li
@@ -126,22 +197,6 @@ class Header extends Component {
                 </li>
               </a>
             </ul>}
-          {isActive &&
-            <a href='http://onagore.com' className='onagore-ctn'>
-              {menuType !== 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore}
-                  srcSet={`${onagore_2x}, 2x`}
-                />}
-              {menuType === 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore_white}
-                  srcSet={`${onagore_white_2x}, 2x`}
-                />}
-            </a>}
-
         </Col>
       </Row>
     )

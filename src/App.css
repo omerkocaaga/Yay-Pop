@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  color: black !important; }
   a:hover {
     color: black !important;
     text-decoration: none !important; }
@@ -14,7 +15,7 @@ a {
   a:focus-within {
     color: black !important; }
   a:visited {
-    color: black; }
+    color: black !important; }
 
 body {
   background-color: #e5e5e5 !important;
@@ -43,6 +44,13 @@ body {
       body.key-black a:hover {
         color: white !important;
         text-decoration: none !important; }
+
+.dn {
+  display: none !important;
+  top: 130px !important; }
+
+.nd {
+  display: block !important; }
 
 .container-fluid {
   max-width: 1620px !important; }
@@ -172,10 +180,8 @@ body {
     list-style: none;
     padding-inline-start: 0 !important;
     position: absolute;
-    left: 1rem;
-    top: 10rem;
     z-index: 3;
-    padding-bottom: 14rem; }
+    padding-top: 4rem; }
     .container-fluid .menu-ctn li span {
       font-size: 2rem;
       position: relative; }
@@ -262,3 +268,112 @@ body {
         .container-fluid .book .page-ctn a img {
           border: 2px solid black;
           margin-bottom: 2rem; }
+
+@media (max-width: 575.98px) {
+  body {
+    background-position: center 2% !important; }
+  .dn {
+    display: block !important; }
+  .nd {
+    display: none !important; }
+  .book {
+    padding-top: 4rem !important;
+    margin-top: 4rem !important; }
+  .menu-ctn {
+    width: 100% !important;
+    left: 0 !important;
+    top: -260px; }
+    .menu-ctn li span {
+      font-size: 1.5rem !important;
+      margin-left: 10% !important; }
+  .onagore-ctn {
+    top: 90vh !important; }
+    .onagore-ctn img {
+      width: 30% !important;
+      margin-left: 10% !important; }
+  .onagore-st-ctn {
+    width: 90% !important;
+    padding-left: 10% !important; }
+    .onagore-st-ctn img {
+      width: 30% !important; }
+  .header-ctn {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding-top: 2rem !important; }
+    .header-ctn.mobile {
+      padding-bottom: 18rem; }
+    .header-ctn .logo {
+      width: 70% !important;
+      top: 130px !important; }
+  .main-ctn {
+    padding-bottom: 0 !important; }
+    .main-ctn .about-ctn {
+      width: 90% !important;
+      margin: 0 auto !important; }
+    .main-ctn .hid {
+      display: none !important; }
+    .main-ctn .center {
+      padding-top: 2rem !important; }
+      .main-ctn .center a .wall {
+        left: 3rem !important; }
+    .main-ctn .intro-text {
+      width: 90% !important;
+      margin: 0 auto !important; }
+    .main-ctn .first-p {
+      padding-top: 8rem !important; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-position: center 3% !important; }
+  .dn {
+    display: block !important; }
+  .nd {
+    display: none !important; }
+  .header-ctn {
+    width: 80% !important;
+    margin: 0 auto !important; }
+    .header-ctn.mobile {
+      padding-bottom: 18rem; }
+    .header-ctn .logo {
+      width: 50% !important;
+      top: 180px !important; }
+  .book {
+    padding-top: 4rem !important;
+    margin-top: 4rem !important; }
+  .menu-ctn {
+    width: 100% !important;
+    left: 0 !important;
+    top: -230px;
+    padding-top: 6rem !important; }
+    .menu-ctn li span {
+      font-size: 2rem !important;
+      margin-left: 11% !important; }
+  .onagore-ctn {
+    top: 90vh !important; }
+    .onagore-ctn img {
+      width: 50% !important;
+      margin-left: 30% !important; }
+  .onagore-st-ctn {
+    width: 80% !important;
+    padding-left: 10% !important; }
+    .onagore-st-ctn img {
+      width: 14% !important; }
+    .onagore-st-ctn span {
+      font-size: 0.8rem !important; }
+  .main-ctn .about-ctn {
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding-top: 15rem !important; }
+  .main-ctn .hid {
+    display: none !important; }
+  .main-ctn .center {
+    padding-top: 2rem !important; }
+    .main-ctn .center .hero {
+      width: 80% !important; }
+    .main-ctn .center .wall {
+      left: 7rem !important; }
+  .main-ctn .intro-text {
+    width: 80% !important;
+    margin: 0 auto !important; }
+  .main-ctn .first-p {
+    padding-top: 18rem !important; } }

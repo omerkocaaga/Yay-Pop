@@ -19,7 +19,7 @@ class Main extends Component {
             sm={{ order: 2 }}
             xs={{ order: 2 }}
           >
-            <div className='intro-text'>
+            <div className='intro-text first-p'>
               <p>
                 <span>YAY</span>
                 , yaymaktan geliyor. Yüklemi emir kipinde kullanıyoruz. Bu belki nazikçe dürtmek istememizden kaynaklanıyor ya da umutlu bir isteğimizi ifade ediyor.
@@ -123,7 +123,7 @@ class Main extends Component {
         {isActive &&
           menuType === '' &&
           <Col lg={{ size: 4, order: 1, offset: 4 }}>
-            <div className='center'>
+            <div className='center hid'>
               <a href='#'>
                 <img
                   src={process.env.PUBLIC_URL + '/img/yp_cover.png'}

@@ -5,24 +5,20 @@ import map from 'lodash.map'
 
 class Book extends Component {
   render () {
-    const arr = []
-    const i = 82
-    for (let index = 0; index < i; index++) {
-      arr.push(index)
-    }
     return (
       <Row className='book'>
         {map(images, (image, index) => {
-          let { url } = image
+          let { url, url_2x, pdf } = image
           return (
             <Col key={index} lg='2' md='6' sm='6' xs='6' className='page-ctn'>
-              <a href='#'>
+              <a href={process.env.PUBLIC_URL + pdf}>
                 <img
                   className='mx-auto img-fluid'
                   src={process.env.PUBLIC_URL + url}
+                  srcSet={`${process.env.PUBLIC_URL + url_2x}, 2x`}
+                  alt={index}
                 />
               </a>
-
               <div>{index}</div>
             </Col>
           )

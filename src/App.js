@@ -93,7 +93,6 @@ class App extends Component {
       isEnglish = false,
       isTurkish = true
     } = this.state
-    console.log('isEnglish:', isEnglish, 'isTurkish:', isTurkish)
     return (
       <Container
         fluid

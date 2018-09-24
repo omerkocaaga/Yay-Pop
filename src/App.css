@@ -81,12 +81,12 @@ body {
         top: 75%;
         left: 6rem;
         width: 80%; }
-  .container-fluid .onagore-ctn {
+  .container-fluid .onagore-wrp .onagore-ctn {
     position: absolute;
     top: 80vh;
     display: flex;
     flex-direction: column; }
-    .container-fluid .onagore-ctn img {
+    .container-fluid .onagore-wrp .onagore-ctn img {
       width: 50%;
       margin-top: -10px; }
   .container-fluid .onagore-st-ctn {
@@ -184,17 +184,8 @@ body {
     padding-top: 4rem; }
     .container-fluid .menu-ctn li span {
       font-size: 2rem;
-      position: relative; }
-      .container-fluid .menu-ctn li span.true:hover::after {
-        position: absolute;
-        content: '';
-        height: 2.6px;
-        bottom: 6px;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: white !important; }
+      position: relative;
+      cursor: pointer; }
       .container-fluid .menu-ctn li span.kunye::after {
         position: absolute;
         content: '';
@@ -225,18 +216,6 @@ body {
         right: 0;
         width: 100%;
         background-color: black; }
-      .container-fluid .menu-ctn li span:hover {
-        cursor: pointer; }
-        .container-fluid .menu-ctn li span:hover::after {
-          position: absolute;
-          content: '';
-          height: 2.6px;
-          bottom: 6px;
-          margin: 0 auto;
-          left: 0;
-          right: 0;
-          width: 100%;
-          background-color: black; }
   .container-fluid .book {
     padding-top: 2rem;
     padding-bottom: 6rem; }
@@ -286,11 +265,13 @@ body {
     .menu-ctn li span {
       font-size: 1.5rem !important;
       margin-left: 10% !important; }
-  .onagore-ctn {
-    top: 90vh !important; }
-    .onagore-ctn img {
-      width: 30% !important;
-      margin-left: 10% !important; }
+  .onagore-wrp {
+    width: 90%;
+    margin: 0 auto; }
+    .onagore-wrp .onagore-ctn {
+      top: 120% !important; }
+      .onagore-wrp .onagore-ctn img {
+        width: 30% !important; }
   .onagore-st-ctn {
     width: 90% !important;
     padding-left: 10% !important; }
@@ -349,7 +330,7 @@ body {
       font-size: 2rem !important;
       margin-left: 11% !important; }
   .onagore-ctn {
-    top: 90vh !important; }
+    top: 180% !important; }
     .onagore-ctn img {
       width: 50% !important;
       margin-left: 30% !important; }

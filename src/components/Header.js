@@ -28,17 +28,23 @@ class Header extends Component {
 
             </span>
             {menuType !== 'kunye' &&
-              <img
-                className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
-                src={logo}
-                srcSet={`${logo_2x}, 2x`}
-              />}
+              <a href={process.env.PUBLIC_URL + '/'}>
+                <img
+                  className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
+                  src={logo}
+                  srcSet={`${logo_2x}, 2x`}
+                  alt='logo'
+                />
+              </a>}
             {menuType === 'kunye' &&
-              <img
-                className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
-                src={logo_white}
-                srcSet={`${logo_white_2x}, 2x`}
-              />}
+              <a href={process.env.PUBLIC_URL + '/'}>
+                <img
+                  className={`logo ${menuType !== '' ? 'dn' : ''} mx-auto img-fluid`}
+                  src={logo_white}
+                  srcSet={`${logo_white_2x}, 2x`}
+                  alt='logo'
+                />
+              </a>}
             <div className='lang'>
               <span
                 className={`${isEnglish ? 'en' : ''} ${menuType === 'kunye'}`}
@@ -59,68 +65,87 @@ class Header extends Component {
           </div>
           {isActive &&
             menuType === '' &&
-            <a href='http://onagore.com' className='onagore-ctn'>
-              {menuType !== 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore}
-                  srcSet={`${onagore_2x}, 2x`}
-                />}
-              {menuType === 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore_white}
-                  srcSet={`${onagore_white_2x}, 2x`}
-                />}
-            </a>}
+            <div className='onagore-wrp'>
+              <a href='http://onagore.com' className='onagore-ctn'>
+                {menuType !== 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore}
+                    srcSet={`${onagore_2x}, 2x`}
+                    alt='logo'
+                  />}
+                {menuType === 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore_white}
+                    srcSet={`${onagore_white_2x}, 2x`}
+                    alt='logo'
+                  />}
+              </a>
+            </div>}
           {isActive &&
             menuType === 'kunye' &&
-            <a href='http://onagore.com' className='onagore-ctn nd'>
-              {menuType !== 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore}
-                  srcSet={`${onagore_2x}, 2x`}
-                />}
-              {menuType === 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore_white}
-                  srcSet={`${onagore_white_2x}, 2x`}
-                />}
-            </a>}
+            <div className='onagore-wrp'>
+
+              <a href='http://onagore.com' className='onagore-ctn nd'>
+                {menuType !== 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore}
+                    srcSet={`${onagore_2x}, 2x`}
+                    alt='logo'
+                  />}
+                {menuType === 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore_white}
+                    srcSet={`${onagore_white_2x}, 2x`}
+                    alt='logo'
+                  />}
+              </a>
+            </div>}
           {isActive &&
             menuType === 'icindekiler' &&
-            <a href='http://onagore.com' className='onagore-ctn nd'>
-              {menuType !== 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore}
-                  srcSet={`${onagore_2x}, 2x`}
-                />}
-              {menuType === 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore_white}
-                  srcSet={`${onagore_white_2x}, 2x`}
-                />}
-            </a>}
+            <div className='onagore-wrp'>
+
+              <a href='http://onagore.com' className='onagore-ctn nd'>
+                {menuType !== 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore}
+                    srcSet={`${onagore_2x}, 2x`}
+                    alt='logo'
+                  />}
+                {menuType === 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore_white}
+                    srcSet={`${onagore_white_2x}, 2x`}
+                    alt='logo'
+                  />}
+              </a>
+            </div>}
           {isActive &&
             menuType === 'hakkinda' &&
-            <a href='http://onagore.com' className='onagore-ctn nd'>
-              {menuType !== 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore}
-                  srcSet={`${onagore_2x}, 2x`}
-                />}
-              {menuType === 'kunye' &&
-                <img
-                  className='img-fluid onagore'
-                  src={onagore_white}
-                  srcSet={`${onagore_white_2x}, 2x`}
-                />}
-            </a>}
+            <div className='onagore-wrp'>
+
+              <a href='http://onagore.com' className='onagore-ctn nd'>
+                {menuType !== 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore}
+                    srcSet={`${onagore_2x}, 2x`}
+                    alt='logo'
+                  />}
+                {menuType === 'kunye' &&
+                  <img
+                    className='img-fluid onagore'
+                    src={onagore_white}
+                    srcSet={`${onagore_white_2x}, 2x`}
+                    alt='logo'
+                  />}
+              </a>
+            </div>}
         </Col>
         <Col lg='4'>
           {isActive &&
@@ -187,7 +212,7 @@ class Header extends Component {
                 {isEnglish &&
                   <span className={`${menuType === 'kunye'}`}>PAGES</span>}
               </li>
-              <a href='#'>
+              <a href={process.env.PUBLIC_URL + '/pdf/yp.pdf'}>
                 <li>
                   {isTurkish &&
                     <span className={`${menuType === 'kunye'}`}>İNDİR</span>}

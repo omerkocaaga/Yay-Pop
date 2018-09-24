@@ -51,10 +51,11 @@ class Main extends Component {
             xs={{ order: 1 }}
           >
             <div className='center'>
-              <a href='#'>
+              <a href={process.env.PUBLIC_URL + '/pdf/yp.pdf'}>
                 <img
                   src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
                   className='hero'
+                  alt='cover'
                 />
                 <img
                   className='mx-auto img-fluid wall'
@@ -110,12 +111,14 @@ class Main extends Component {
                   className='img-fluid onagore'
                   src={onagore}
                   srcSet={`${onagore_2x}, 2x`}
+                  alt='onagore'
                 />}
               {menuType === 'kunye' &&
                 <img
                   className='img-fluid onagore'
                   src={onagore_white}
                   srcSet={`${onagore_white_2x}, 2x`}
+                  alt='onagore'
                 />}
               {!isActive && <span>Projesi</span>}
             </a>
@@ -124,10 +127,11 @@ class Main extends Component {
           menuType === '' &&
           <Col lg={{ size: 4, order: 1, offset: 4 }}>
             <div className='center hid'>
-              <a href='#'>
+              <a href={process.env.PUBLIC_URL + '/pdf/yp.pdf'}>
                 <img
                   src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
                   className='hero'
+                  alt='hero'
                 />
                 {/* <img
                   className='mx-auto img-fluid wall'

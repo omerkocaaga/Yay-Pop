@@ -1,250 +1,414 @@
 {
     "images": [
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_00.png",
+            "url_2x": "/img/yp_00@2x.png",
+            "pdf": "/pdf/yp_00.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_01.png",
+            "url_2x": "/img/yp_01@2x.png",
+            "pdf": "/pdf/yp_01.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_02.png",
+            "url_2x": "/img/yp_02@2x.png",
+            "pdf": "/pdf/yp_02.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_03.png",
+            "url_2x": "/img/yp_03@2x.png",
+            "pdf": "/pdf/yp_03.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_04.png",
+            "url_2x": "/img/yp_04@2x.png",
+            "pdf": "/pdf/yp_04.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_05.png",
+            "url_2x": "/img/yp_05@2x.png",
+            "pdf": "/pdf/yp_05.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_06.png",
+            "url_2x": "/img/yp_06@2x.png",
+            "pdf": "/pdf/yp_06.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_07.png",
+            "url_2x": "/img/yp_07@2x.png",
+            "pdf": "/pdf/yp_07.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_08.png",
+            "url_2x": "/img/yp_08@2x.png",
+            "pdf": "/pdf/yp_08.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_09.png",
+            "url_2x": "/img/yp_09@2x.png",
+            "pdf": "/pdf/yp_09.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_10.png",
+            "url_2x": "/img/yp_10@2x.png",
+            "pdf": "/pdf/yp_10.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_11.png",
+            "url_2x": "/img/yp_11@2x.png",
+            "pdf": "/pdf/yp_11.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_12.png",
+            "url_2x": "/img/yp_12@2x.png",
+            "pdf": "/pdf/yp_12.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_13.png",
+            "url_2x": "/img/yp_13@2x.png",
+            "pdf": "/pdf/yp_13.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_14.png",
+            "url_2x": "/img/yp_14@2x.png",
+            "pdf": "/pdf/yp_14.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_15.png",
+            "url_2x": "/img/yp_15@2x.png",
+            "pdf": "/pdf/yp_15.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_16.png",
+            "url_2x": "/img/yp_16@2x.png",
+            "pdf": "/pdf/yp_16.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_17.png",
+            "url_2x": "/img/yp_17@2x.png",
+            "pdf": "/pdf/yp_17.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_18.png",
+            "url_2x": "/img/yp_18@2x.png",
+            "pdf": "/pdf/yp_18.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_19.png",
+            "url_2x": "/img/yp_19@2x.png",
+            "pdf": "/pdf/yp_19.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_20.png",
+            "url_2x": "/img/yp_20@2x.png",
+            "pdf": "/pdf/yp_20.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_21.png",
+            "url_2x": "/img/yp_21@2x.png",
+            "pdf": "/pdf/yp_21.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_22.png",
+            "url_2x": "/img/yp_22@2x.png",
+            "pdf": "/pdf/yp_22.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_23.png",
+            "url_2x": "/img/yp_23@2x.png",
+            "pdf": "/pdf/yp_23.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_24.png",
+            "url_2x": "/img/yp_24@2x.png",
+            "pdf": "/pdf/yp_24.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_25.png",
+            "url_2x": "/img/yp_25@2x.png",
+            "pdf": "/pdf/yp_25.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_26.png",
+            "url_2x": "/img/yp_26@2x.png",
+            "pdf": "/pdf/yp_26.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_27.png",
+            "url_2x": "/img/yp_27@2x.png",
+            "pdf": "/pdf/yp_27.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_28.png",
+            "url_2x": "/img/yp_28@2x.png",
+            "pdf": "/pdf/yp_28.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_29.png",
+            "url_2x": "/img/yp_29@2x.png",
+            "pdf": "/pdf/yp_29.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_30.png",
+            "url_2x": "/img/yp_30@2x.png",
+            "pdf": "/pdf/yp_30.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_31.png",
+            "url_2x": "/img/yp_31@2x.png",
+            "pdf": "/pdf/yp_31.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_32.png",
+            "url_2x": "/img/yp_32@2x.png",
+            "pdf": "/pdf/yp_32.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_33.png",
+            "url_2x": "/img/yp_33@2x.png",
+            "pdf": "/pdf/yp_33.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_34.png",
+            "url_2x": "/img/yp_34@2x.png",
+            "pdf": "/pdf/yp_34.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_35.png",
+            "url_2x": "/img/yp_35@2x.png",
+            "pdf": "/pdf/yp_35.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_36.png",
+            "url_2x": "/img/yp_36@2x.png",
+            "pdf": "/pdf/yp_36.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_37.png",
+            "url_2x": "/img/yp_37@2x.png",
+            "pdf": "/pdf/yp_37.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_38.png",
+            "url_2x": "/img/yp_38@2x.png",
+            "pdf": "/pdf/yp_38.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_39.png",
+            "url_2x": "/img/yp_39@2x.png",
+            "pdf": "/pdf/yp_39.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_40.png",
+            "url_2x": "/img/yp_40@2x.png",
+            "pdf": "/pdf/yp_40.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_41.png",
+            "url_2x": "/img/yp_41@2x.png",
+            "pdf": "/pdf/yp_41.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_42.png",
+            "url_2x": "/img/yp_42@2x.png",
+            "pdf": "/pdf/yp_42.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_43.png",
+            "url_2x": "/img/yp_43@2x.png",
+            "pdf": "/pdf/yp_43.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_44.png",
+            "url_2x": "/img/yp_44@2x.png",
+            "pdf": "/pdf/yp_44.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_45.png",
+            "url_2x": "/img/yp_45@2x.png",
+            "pdf": "/pdf/yp_45.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_46.png",
+            "url_2x": "/img/yp_46@2x.png",
+            "pdf": "/pdf/yp_46.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_47.png",
+            "url_2x": "/img/yp_47@2x.png",
+            "pdf": "/pdf/yp_47.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_48.png",
+            "url_2x": "/img/yp_48@2x.png",
+            "pdf": "/pdf/yp_48.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_49.png",
+            "url_2x": "/img/yp_49@2x.png",
+            "pdf": "/pdf/yp_49.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_50.png",
+            "url_2x": "/img/yp_50@2x.png",
+            "pdf": "/pdf/yp_50.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_51.png",
+            "url_2x": "/img/yp_51@2x.png",
+            "pdf": "/pdf/yp_51.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_52.png",
+            "url_2x": "/img/yp_52@2x.png",
+            "pdf": "/pdf/yp_52.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_53.png",
+            "url_2x": "/img/yp_53@2x.png",
+            "pdf": "/pdf/yp_53.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_54.png",
+            "url_2x": "/img/yp_54@2x.png",
+            "pdf": "/pdf/yp_54.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_55.png",
+            "url_2x": "/img/yp_55@2x.png",
+            "pdf": "/pdf/yp_55.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_56.png",
+            "url_2x": "/img/yp_56@2x.png",
+            "pdf": "/pdf/yp_56.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_57.png",
+            "url_2x": "/img/yp_57@2x.png",
+            "pdf": "/pdf/yp_57.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_58.png",
+            "url_2x": "/img/yp_58@2x.png",
+            "pdf": "/pdf/yp_58.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_59.png",
+            "url_2x": "/img/yp_59@2x.png",
+            "pdf": "/pdf/yp_59.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_60.png",
+            "url_2x": "/img/yp_60@2x.png",
+            "pdf": "/pdf/yp_60.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_61.png",
+            "url_2x": "/img/yp_61@2x.png",
+            "pdf": "/pdf/yp_61.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_62.png",
+            "url_2x": "/img/yp_62@2x.png",
+            "pdf": "/pdf/yp_62.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_63.png",
+            "url_2x": "/img/yp_63@2x.png",
+            "pdf": "/pdf/yp_63.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_64.png",
+            "url_2x": "/img/yp_64@2x.png",
+            "pdf": "/pdf/yp_64.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_65.png",
+            "url_2x": "/img/yp_65@2x.png",
+            "pdf": "/pdf/yp_65.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_66.png",
+            "url_2x": "/img/yp_66@2x.png",
+            "pdf": "/pdf/yp_66.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_67.png",
+            "url_2x": "/img/yp_67@2x.png",
+            "pdf": "/pdf/yp_67.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_68.png",
+            "url_2x": "/img/yp_68@2x.png",
+            "pdf": "/pdf/yp_68.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_69.png",
+            "url_2x": "/img/yp_69@2x.png",
+            "pdf": "/pdf/yp_69.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_70.png",
+            "url_2x": "/img/yp_70@2x.png",
+            "pdf": "/pdf/yp_70.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_71.png",
+            "url_2x": "/img/yp_71@2x.png",
+            "pdf": "/pdf/yp_71.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_72.png",
+            "url_2x": "/img/yp_72@2x.png",
+            "pdf": "/pdf/yp_72.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_73.png",
+            "url_2x": "/img/yp_73@2x.png",
+            "pdf": "/pdf/yp_73.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_74.png",
+            "url_2x": "/img/yp_74@2x.png",
+            "pdf": "/pdf/yp_74.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_75.png",
+            "url_2x": "/img/yp_75@2x.png",
+            "pdf": "/pdf/yp_75.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_76.png",
+            "url_2x": "/img/yp_76@2x.png",
+            "pdf": "/pdf/yp_76.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_77.png",
+            "url_2x": "/img/yp_77@2x.png",
+            "pdf": "/pdf/yp_77.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_78.png",
+            "url_2x": "/img/yp_78@2x.png",
+            "pdf": "/pdf/yp_78.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_79.png",
+            "url_2x": "/img/yp_79@2x.png",
+            "pdf": "/pdf/yp_79.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_80.png",
+            "url_2x": "/img/yp_80@2x.png",
+            "pdf": "/pdf/yp_80.pdf"
         },
         {
-            "url": "/img/yp_01.png"
+            "url": "/img/yp_81.png",
+            "url_2x": "/img/yp_81@2x.png",
+            "pdf": "/pdf/yp_81.pdf"
         }
     ]
 }

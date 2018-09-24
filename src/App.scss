@@ -113,14 +113,16 @@ body {
       }
     }
   }
-  .onagore-ctn {
-    position: absolute;
-    top: 80vh;
-    display: flex;
-    flex-direction: column;
-    img {
-      width: 50%;
-      margin-top: -10px;
+  .onagore-wrp {
+    .onagore-ctn {
+      position: absolute;
+      top: 80vh;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 50%;
+        margin-top: -10px;
+      }
     }
   }
   .onagore-st-ctn {
@@ -250,20 +252,21 @@ body {
       span {
         font-size: 2rem;
         position: relative;
+        cursor: pointer;
         &.true {
-          &:hover {
-            &::after {
-              position: absolute;
-              content: '';
-              height: 2.6px;
-              bottom: 6px; 
-              margin: 0 auto;
-              left: 0;
-              right: 0;
-              width: 100%;
-              background-color: white !important;
-            }
-          }
+          // &:hover {
+          //   &::after {
+          //     position: absolute;
+          //     content: '';
+          //     height: 2.6px;
+          //     bottom: 6px; 
+          //     margin: 0 auto;
+          //     left: 0;
+          //     right: 0;
+          //     width: 100%;
+          //     background-color: white !important;
+          //   }
+          // }
 
         }
         &.kunye {
@@ -305,20 +308,20 @@ body {
             background-color: black;
           } 
         }
-        &:hover {
-          cursor: pointer;
-          &::after {
-            position: absolute;
-            content: '';
-            height: 2.6px;
-            bottom: 6px; 
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            width: 100%;
-            background-color: black;
-          } 
-        }
+        // &:hover {
+        //   cursor: pointer;
+        //   &::after {
+        //     position: absolute;
+        //     content: '';
+        //     height: 2.6px;
+        //     bottom: 6px; 
+        //     margin: 0 auto;
+        //     left: 0;
+        //     right: 0;
+        //     width: 100%;
+        //     background-color: black;
+        //   } 
+        // }
       }
 
     }
@@ -396,13 +399,17 @@ body {
       }
     }
   }
-  .onagore-ctn {
-    top:90vh !important;
-    img {
-      width: 30% !important;
-      margin-left: 10% !important;
+  .onagore-wrp{
+    width: 90%;
+    margin: 0 auto;
+    .onagore-ctn {
+      top:120% !important;
+      img {
+        width: 30% !important;
+      }
     }
   }
+
   .onagore-st-ctn {
     width: 90% !important;
     padding-left: 10% !important;
@@ -494,7 +501,7 @@ body {
     }
   }
   .onagore-ctn {
-    top:90vh !important;
+    top:180% !important;
     img {
       width: 50% !important;
       margin-left: 30% !important;
@@ -538,4 +545,3 @@ body {
     }
   }
 }
-

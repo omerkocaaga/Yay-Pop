@@ -6,6 +6,10 @@ import onagore from '.././assets/img/onagore.png'
 import onagore_2x from '.././assets/img/onagore@2x.png'
 import onagore_white from '.././assets/img/onagore_white.png'
 import onagore_white_2x from '.././assets/img/onagore_white@2x.png'
+import tasarim from '.././assets/img/tasarim.png'
+import tasarim_2x from '.././assets/img/tasarim@2x.png'
+import okullar from '.././assets/img/okullar.png'
+import okullar_2x from '.././assets/img/okullar@2x.png'
 
 class Main extends Component {
   render () {
@@ -54,6 +58,7 @@ class Main extends Component {
               <a href={process.env.PUBLIC_URL + '/pdf/yp.pdf'}>
                 <img
                   src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
+                  srcSet={`${process.env.PUBLIC_URL + '/img/yp_cover.png'}, 2x`}
                   className='hero'
                   alt='cover'
                 />
@@ -103,6 +108,7 @@ class Main extends Component {
             md={{ order: 3 }}
             sm={{ order: 3 }}
             xs={{ size: 12, order: 3 }}
+            className='logo-col'
           >
             <a href='http://onagore.com' className='onagore-st-ctn pt-5'>
               {!isActive && <span>Bir</span>}
@@ -122,6 +128,25 @@ class Main extends Component {
                 />}
               {!isActive && <span>Projesi</span>}
             </a>
+            <a className='onagore-st-ctn-x pt-5' href='https://iksv.org'>
+              <img
+                className='img-fluid onagore'
+                src={tasarim}
+                srcSet={`${tasarim_2x}, 2x`}
+                alt='iksv'
+              />
+            </a>
+            <a
+              className='onagore-st-ctn-x pt-5'
+              href='https://okullarokulu.iksv.org'
+            >
+              <img
+                className='img-fluid onagore'
+                src={okullar}
+                srcSet={`${okullar_2x}, 2x`}
+                alt='okullar okulu'
+              />
+            </a>
           </Col>}
         {isActive &&
           menuType === '' &&
@@ -130,6 +155,7 @@ class Main extends Component {
               <a href={process.env.PUBLIC_URL + '/pdf/yp.pdf'}>
                 <img
                   src={process.env.PUBLIC_URL + '/img/yp_cover.png'}
+                  srcSet={`${process.env.PUBLIC_URL + '/img/yp_cover.png'}, 2x`}
                   className='hero'
                   alt='hero'
                 />

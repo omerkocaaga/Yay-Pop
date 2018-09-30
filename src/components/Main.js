@@ -170,12 +170,45 @@ class Main extends Component {
           </Col>}
         {menuType === 'hakkinda' &&
           <Col lg={{ size: 6, offset: 4 }} className='about-ctn'>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            </p>
+            {isTurkish &&
+              <span>
+                <p>
+                  Biz Onagöre.
+                </p>
+                <p>
+                  Yayıncı olmak istiyoruz.{' '}
+                </p>
+                <p>
+                  Bu yüzden YAY POP’u yaptık. YAY POP yayıncılık üzerine bir yayın. Şimdilik tek sayı olarak kurgulanmış bir dergi.
+                  {' '}
+                </p>
+                <p>
+                  Yayıncılığı, önce tanıdıklarımıza, sonra onların tanıdıklarına sorarak öğrenmek iyi olur diye düşündük. Dergi, yayıncılığı öğrenirken sorduğumuz sorular etrafında şekillendi.
+                  {' '}
+                </p>
+                <p>
+                  Yayıncı olmak ne demek? Yayıncıyı bir iktidar figürü olarak mı görmeli, yoksa üretene yardımcı olan bir paydaş  mı? Yayıncılığın sınırları nedir? Ekonomisi nedir? Bağlılıkları ve bağımlılıkları nelerdir? Yayıncı nasıl olunur? Yayıncılığa nasıl başlanır? Yayıncılık ne zaman, hangi koşullarda bitirilir? Yayıncı olunup da farkında olmamak mümkün müdür?
+                </p>
+              </span>}
+            {isEnglish &&
+              <span>
+                <p>
+                  We are Onagöre.
+                </p>
+                <p>
+                  We want to be publishers.
+                </p>
+                <p>
+                  This is why we produced YAY POP. YAY POP is a publication on publishing. For now, it is a one-issue magazine.
+                </p>
+                <p>
+                  We thought that it would make sense to ask people around us and then they would ask people they knew what publishing is. The magazine is shaped around the questions that we asked in the process of learning to be publishers.
+                </p>
+                <p>
+                  What does it mean to be a publisher? Should we see the publisher as a figure of author, or are they stakeholders who help the producers? What are the boundaries of publishing? What is the economy of publishing? What are its dependencies and addictions? How do you become a publisher? How do you begin to be a publisher? How do you end being a publisher and under what circumstances? Is it possible to be a publisher and not know it?
+                  {' '}
+                </p>
+              </span>}
           </Col>}
         {menuType === 'icindekiler' &&
           <Col lg={{ size: 6, offset: 4 }} className='about-ctn'>

@@ -1,5 +1,5 @@
 * {
-  font-size: 20px;
+  font-size: 1.08em;
   box-sizing: border-box; }
 
 a {
@@ -102,10 +102,12 @@ body {
     .container-fluid .logo-col .onagore-st-ctn {
       display: flex;
       flex-direction: column;
-      width: 80px;
+      width: 110px;
       padding-right: 10px; }
       .container-fluid .logo-col .onagore-st-ctn img {
         margin-top: -10px; }
+      .container-fluid .logo-col .onagore-st-ctn span {
+        font-size: 20px; }
   .container-fluid .header-ctn {
     display: flex;
     justify-content: space-between;
@@ -286,8 +288,7 @@ body {
   .logo-col {
     justify-content: space-between !important; }
     .logo-col .onagore-st-ctn {
-      width: 100px !important;
-      padding-left: 10% !important; }
+      width: 110px !important; }
     .logo-col .onagore-st-ctn-x {
       width: 30% !important; }
   .header-ctn {
@@ -351,7 +352,7 @@ body {
     width: initial !important;
     padding-left: 10% !important; }
     .onagore-st-ctn img {
-      width: 60px !important; }
+      width: 70px !important; }
     .onagore-st-ctn span {
       font-size: 0.8rem !important; }
   .main-ctn .about-ctn {

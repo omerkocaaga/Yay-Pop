@@ -23,29 +23,57 @@ class Main extends Component {
             sm={{ order: 2 }}
             xs={{ order: 2 }}
           >
-            <div className='intro-text first-p'>
-              <p>
-                <span>YAY</span>
-                , yaymaktan geliyor. Yüklemi emir kipinde kullanıyoruz. Bu belki nazikçe dürtmek istememizden kaynaklanıyor ya da umutlu bir isteğimizi ifade ediyor.
-              </p>
-              <p>
-                <span>YAY</span>
-                {' '}
-                aynı zamanda bir objeyi tarif ediyor. Yayılacak şeylerin gerginliğini taşıyan, daha büyük bir şeyin potansiyelini hissettiren bir nesne.
-              </p>
-              <p>
-                <span>POP, Publishing on Publishing</span>
-                ’in yani
-                {' '}
-                <span>Yayıncılık Üzerine Yayın</span>
-                ’ın kısaltması.
-              </p>
-              <p>
-                <span>POP</span>
-                {' '}
-                aynı zamanda o ortaya çıkma anından bahsediyor, yapıcılıkla gelen o açılmanın sesi.
-              </p>
-            </div>
+            {isTurkish &&
+              <div className='intro-text first-p'>
+                <p>
+                  <span>YAY</span>
+                  , yaymaktan geliyor. Yüklemi emir kipinde kullanıyoruz. Bu belki nazikçe dürtmek istememizden kaynaklanıyor ya da umutlu bir isteğimizi ifade ediyor.
+                </p>
+                <p>
+                  <span>YAY</span>
+                  {' '}
+                  aynı zamanda bir objeyi tarif ediyor. Yayılacak şeylerin gerginliğini taşıyan, daha büyük bir şeyin potansiyelini hissettiren bir nesne.
+                </p>
+                <p>
+                  <span>POP, Publishing on Publishing</span>
+                  ’in yani
+                  {' '}
+                  <span>Yayıncılık Üzerine Yayın</span>
+                  ’ın kısaltması.
+                </p>
+                <p>
+                  <span>POP</span>
+                  {' '}
+                  aynı zamanda o ortaya çıkma anından bahsediyor, yapıcılıkla gelen o açılmanın sesi.
+                </p>
+              </div>}
+            {isEnglish &&
+              <div className='intro-text first-p'>
+                <p>
+                  <span>YAY</span>
+                  {' '}
+                  means to spread, to propagate. It is the imperative form of the verb, perhaps a gentle nudge, maybe a wishful order.
+                  {' '}
+                </p>
+                <p>
+                  <span>YAY</span>
+                  {' '}
+                  is also a noun—a bow. Holding the tension of things that are to be spread and the physicality of things that hold the potential of something bigger.
+                </p>
+                <p>
+                  <span>POP</span>
+                  {' '}
+                  is the acronym for
+                  {' '}
+                  <span>Publishing on Publishing</span>
+                  .
+                  {' '}
+                </p>
+                <p>
+                  <span>POP </span>
+                  also refers to that moment of emergence, a constructive singularity.
+                </p>
+              </div>}
           </Col>}
         {!isActive &&
           <Col
@@ -78,29 +106,51 @@ class Main extends Component {
             sm={{ order: 2 }}
             xs={{ order: 2 }}
           >
-            <div className='intro-text'>
-              <p>
-                <span>YAY-POP</span>
-                {' '}
-                tek sayı olarak kurgulanmış bir dergi, Onagöre tarafından İstanbul Tasarım Bienali’nin siparişi üzerine üretiliyor.
-              </p>
-              <p>
-                İçeriğimizi sayfalara dizdikçe buraya koyacağız. Böylece
-                {' '}
-                <span>YAY-POP</span>
-                {' '}
-                6 haftalık bienal sürecinde kendini geliştiriyor olacak. Yazıların ve görsellerimizin ham halini görebileceğiniz editoryal odayı 
-                <span>Yapı Kredi Kültür Sanat</span>
-                'ta (İstiklal Cad. no 161) ziyaret edebilirsiniz, içeriğimizle oynayabilirsiniz. Etkinliklerimiz için lütfen
-                {' '}
-                <span>şuradaki</span>
-                {' '}
-                takvime bakın.
-              </p>
-              <p>
-                Derginin güncel halini indirmek için soldaki kapağa ya da tek tek içerikleri indirmek için aşağıdaki sayfalara tıklayın.
-              </p>
-            </div>
+            {isTurkish &&
+              <div className='intro-text'>
+                <p>
+                  <span>YAY-POP</span>
+                  {' '}
+                  tek sayı olarak kurgulanmış bir dergi, Onagöre tarafından İstanbul Tasarım Bienali’nin siparişi üzerine üretiliyor.
+                </p>
+                <p>
+                  İçeriğimizi sayfalara dizdikçe buraya koyacağız. Böylece
+                  {' '}
+                  <span>YAY-POP</span>
+                  {' '}
+                  6 haftalık bienal sürecinde kendini geliştiriyor olacak. Yazıların ve görsellerimizin ham halini görebileceğiniz editoryal odayı 
+                  <span>Yapı Kredi Kültür Sanat</span>
+                  'ta (İstiklal Cad. no 161) ziyaret edebilirsiniz, içeriğimizle oynayabilirsiniz. Etkinliklerimiz için lütfen
+                  {' '}
+                  <span>şuradaki</span>
+                  {' '}
+                  takvime bakın.
+                </p>
+                <p>
+                  Derginin güncel halini indirmek için soldaki kapağa ya da tek tek içerikleri indirmek için aşağıdaki sayfalara tıklayın.
+                </p>
+              </div>}
+            {isEnglish &&
+              <div className='intro-text'>
+                <p>
+                  <span>YAY POP </span>
+                  is a publication on publishing. For now, it is a one-issue magazine.
+                  {' '}
+                </p>
+                <p>
+                  We are going to put up our content online as we make progress, so
+                  {' '}
+                  <span>YAY-POP </span>
+                  will be developing over the 6-week biennial process. You can visit the editorial room where we present the raw versions our texts and images at
+                  {' '}
+                  <span>Yapı Kredi Kültür Sanat</span>
+                  {' '}
+                  (İstiklal Cad. no 161) and you can play around with our content. Please look at the calendar here for our events.
+                </p>
+                <p>
+                  To download the current version of the magazine, click on the cover on the left or if you want to download the individual articles, click on the pages below.
+                </p>
+              </div>}
           </Col>}
         {!isActive &&
           <Col

@@ -7,6 +7,8 @@ import Book from './components/Book'
 import './App.css'
 import './assets/style/styles.css'
 import './assets/style/hamburgers.css'
+import poster from './assets/img/poster.png'
+import poster_2x from './assets/img/poster@2x.png'
 
 class App extends Component {
   constructor (props) {
@@ -17,7 +19,8 @@ class App extends Component {
       scrollPages: false,
       menuType: '',
       isEnglish: false,
-      isTurkish: true
+      isTurkish: true,
+      isModalActive: true
     }
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
     this.rootScrollToHandler = this.rootScrollToHandler.bind(this)
@@ -91,41 +94,61 @@ class App extends Component {
       menuType = '',
       hoverType = '',
       isEnglish = false,
-      isTurkish = true
+      isTurkish = true,
+      isModalActive = true
     } = this.state
     return (
-      <Container
-        fluid
-        className={`${menuType === 'kunye' ? 'key-black-text' : ''}`}
-      >
-        <Helmet>
-          <body
-            className={`${isActive ? 'magenta' : ''} ${hoverType === 'hakkinda' ? 'cyan' : ''} ${hoverType === 'icindekiler' ? 'yellow' : ''} ${hoverType === 'kunye' ? 'key-black' : ''} ${menuType === 'hakkinda' ? 'cyan' : ''} ${menuType === 'icindekiler' ? 'yellow' : ''} ${menuType === 'kunye' ? 'key-black' : ''}`}
-          />
-        </Helmet>
-        <Header
-          onClickHandler={this.rootOnClickHandler}
-          scrollToHandler={this.rootScrollToHandler}
-          menuHandler={this.rootMenuHandler}
-          hoverHandler={this.rootHoverHandler}
-          englishHandler={this.rootEnglishHandler}
-          turkishHandler={this.rootTurkishHandler}
-          isActive={isActive}
-          menuType={menuType}
-          isEnglish={isEnglish}
-          isTurkish={isTurkish}
-        />
-        <Main
-          isActive={isActive}
-          menuType={menuType}
-          isEnglish={isEnglish}
-          isTurkish={isTurkish}
-        />
-        <div ref={this.book}>
-          <Book />
+      <div>
+        {isModalActive &&
+          <div className='modal-ctn'>
+            <img
+              className='mx-auto img-fluid wall'
+              src={poster}
+              srcSet={`${poster_2x}, 2x`}
+              alt={poster}
+            />
+            <span
+              onClick={() => {
+                this.setState({ isModalActive: false })
+              }}
+            >
+              X
+            </span>
+          </div>}
 
-        </div>
-      </Container>
+        <Container
+          fluid
+          className={`${menuType === 'kunye' ? 'key-black-text' : ''}`}
+        >
+          <Helmet>
+            <body
+              className={`${isActive ? 'magenta' : ''} ${hoverType === 'hakkinda' ? 'cyan' : ''} ${hoverType === 'icindekiler' ? 'yellow' : ''} ${hoverType === 'kunye' ? 'key-black' : ''} ${menuType === 'hakkinda' ? 'cyan' : ''} ${menuType === 'icindekiler' ? 'yellow' : ''} ${menuType === 'kunye' ? 'key-black' : ''}`}
+            />
+          </Helmet>
+          <Header
+            onClickHandler={this.rootOnClickHandler}
+            scrollToHandler={this.rootScrollToHandler}
+            menuHandler={this.rootMenuHandler}
+            hoverHandler={this.rootHoverHandler}
+            englishHandler={this.rootEnglishHandler}
+            turkishHandler={this.rootTurkishHandler}
+            isActive={isActive}
+            menuType={menuType}
+            isEnglish={isEnglish}
+            isTurkish={isTurkish}
+          />
+          <Main
+            isActive={isActive}
+            menuType={menuType}
+            isEnglish={isEnglish}
+            isTurkish={isTurkish}
+          />
+          <div ref={this.book}>
+            <Book />
+
+          </div>
+        </Container>
+      </div>
     )
   }
 }

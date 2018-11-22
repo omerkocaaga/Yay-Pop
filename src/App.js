@@ -20,7 +20,7 @@ class App extends Component {
       menuType: '',
       isEnglish: false,
       isTurkish: true,
-      isModalActive: true
+      isModalActive: false
     }
     this.rootOnClickHandler = this.rootOnClickHandler.bind(this)
     this.rootScrollToHandler = this.rootScrollToHandler.bind(this)

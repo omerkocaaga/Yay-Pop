@@ -431,6 +431,11 @@
       "pdf": "/pdf/yp_85.pdf"
     },
     {
+      "url": "/img/yp_86.png",
+      "url_2x": "/img/yp_86@2x.png",
+      "pdf": "/pdf/yp_86.pdf"
+    },
+    {
       "url": "/img/yp_87.png",
       "url_2x": "/img/yp_87@2x.png",
       "pdf": "/pdf/yp_87.pdf"
@@ -444,11 +449,6 @@
       "url": "/img/yp_89.png",
       "url_2x": "/img/yp_89@2x.png",
       "pdf": "/pdf/yp_89.pdf"
-    },
-    {
-      "url": "/img/yp_90.png",
-      "url_2x": "/img/yp_90@2x.png",
-      "pdf": "/pdf/yp_90.pdf"
     }
   ]
 }
